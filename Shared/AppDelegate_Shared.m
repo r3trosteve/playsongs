@@ -7,15 +7,111 @@
 //
 
 #import "AppDelegate_Shared.h"
-
+#import "UIDevice+Hardware.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation AppDelegate_Shared
 
 @synthesize window;
-
+@synthesize mmIphone;
+@synthesize mmIpad;
 
 #pragma mark -
 #pragma mark Application lifecycle
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+	UIImageView *img = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"home_bg.png"]] autorelease];
+	img.frame = window.bounds;
+	[window addSubview:img];
+    
+	[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(showLogoAnimation) userInfo:nil repeats:NO];
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+-(void)showLogoAnimation{
+	UIImageView *logo = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]] autorelease];
+	UIImageView *logoText = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_text.png"]] autorelease];
+	
+	logo.frame = CGRectMake((window.bounds.size.width - logo.frame.size.width) / 2, - logoText.frame.size.width - 50 - logoText.frame.size.height , logo.frame.size.width, logo.frame.size.height);
+	logoText.frame = CGRectMake((window.bounds.size.width - logoText.frame.size.width) / 2,- logoText.frame.size.height, logoText.frame.size.width, logoText.frame.size.height);
+	
+	[window addSubview:logo];
+	[window addSubview:logoText];
+	
+	
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:1];
+	[UIView setAnimationDelay:0.0];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationDidStopSelector:@selector(finishedlogoAnimation:finished:context:)];
+	logo.frame = CGRectMake(logo.frame.origin.x, 15 , logo.frame.size.width, logo.frame.size.height);
+	
+	NSInteger yPosition;
+	if ([UIDevice isIPad]) {
+		yPosition = logo.frame.origin.x + logo.frame.size.height - 230;
+    } else {
+		yPosition = logo.frame.origin.x + logo.frame.size.height - 85;
+    }
+	
+	logoText.frame = CGRectMake(logoText.frame.origin.x, yPosition , logoText.frame.size.width, logoText.frame.size.height);
+
+	
+	[UIView commitAnimations];
+	
+}
+
+-(void)finishedlogoAnimation:(NSString*)animationID finished:(BOOL)finished context:(void*)context{
+	UIImageView *text = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nickie_jill.png"]] autorelease];
+	
+	NSInteger yPosition;
+	if ([UIDevice isIPad]) {
+		yPosition = 700;
+    } else {
+		yPosition = 340;
+    }
+	
+	text.frame = CGRectMake((window.bounds.size.width - text.frame.size.width) / 3.5, yPosition, text.frame.size.width, text.frame.size.height);
+	text.alpha = 0;
+	[window addSubview:text];
+	
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:1];
+	[UIView setAnimationDelay:0.1];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationDidStopSelector:@selector(finishedFadeAnimation:finished:context:)];
+	
+	text.alpha = 1;
+	
+	[UIView commitAnimations];
+}
+
+-(void)finishedFadeAnimation:(NSString*)animationID finished:(BOOL)finished context:(void*)context{
+	[self performSelector:@selector(showMenu) withObject:nil afterDelay:1];
+}
+
+-(void)showMenu{
+	CATransition *transition = [CATransition animation];
+	
+	transition.duration = 0.8;
+	transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+	transition.type = kCATransitionFade;
+	[window.layer addAnimation:transition forKey:@"FADE_ANIM"];
+	
+	[[window subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+	
+	if ([UIDevice isIPad]) {
+		self.mmIpad = [[[MainMenuViewControllerIPad alloc] initWithNibName:@"MainMenuViewControllerIPad" bundle:nil] autorelease];
+		[window addSubview:mmIpad.view];
+	}
+	else {
+		self.mmIphone = [[[MainMenuViewControllerIphone alloc] initWithNibName:@"MainMenuViewControllerIPhone" bundle:nil] autorelease];
+		[window addSubview:mmIphone.view];
+	}
+}
+
 
 /**
  Save changes in the application's managed object context before the application terminates.
@@ -159,6 +255,9 @@
     [managedObjectModel_ release];
     [persistentStoreCoordinator_ release];
     
+	[mmIphone release];
+	[mmIpad release];
+	
     [window release];
     [super dealloc];
 }
