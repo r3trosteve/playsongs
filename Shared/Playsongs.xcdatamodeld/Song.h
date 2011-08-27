@@ -21,6 +21,9 @@
 @property (nonatomic, retain) NSString * localPath;
 @property (nonatomic, retain) NSSet* favouritePlaylist;
 
++(BOOL)copyDefaultData:(NSManagedObjectContext *)managedObjectContext;
++(NSArray *)getSongs:(BOOL)lullaby managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+
 @end
 
 

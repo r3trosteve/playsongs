@@ -9,6 +9,7 @@
 #import "AppDelegate_Shared.h"
 #import "UIDevice+Hardware.h"
 #import <QuartzCore/QuartzCore.h>
+#import "Song.h"
 
 @implementation AppDelegate_Shared
 
@@ -19,7 +20,24 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {  
+	//Copy the default data
+	if (![[NSUserDefaults standardUserDefaults] boolForKey:@"CopiedDefaultData"]) {
+		
+		if ([Song copyDefaultData:self.managedObjectContext]) {
+			NSLog(@"Successfully copied data");
+			[[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"CopiedDefaultData"];
+		}
+		else {
+			[[[[UIAlertView alloc] initWithTitle:@"Error" message:@"Error copying data." delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil] autorelease] show];
+		}
+		
+		[[NSUserDefaults standardUserDefaults] setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] forKey:@"version"];
+		[[NSUserDefaults standardUserDefaults] synchronize];
+		
+	}
+	
+	//Prepare UI
 	UIImageView *img = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"home_bg.png"]] autorelease];
 	img.frame = window.bounds;
 	[window addSubview:img];

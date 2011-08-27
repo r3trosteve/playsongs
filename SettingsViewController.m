@@ -1,24 +1,23 @@
     //
-//  MainMenuViewController.m
+//  SettingsViewController.m
 //  Playsongs
 //
 //  Created by Bala Bhadra Maharjan on 8/26/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "MainMenuViewController.h"
+#import "SettingsViewController.h"
+#import "AppDelegate_Shared.h"
 
-@implementation MainMenuViewController
+@implementation SettingsViewController
 
-@synthesize window;
-@synthesize context;
+@synthesize childName;
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.window = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] window];
-		self.context = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] managedObjectContext];
+        self.childName = [[NSUserDefaults standardUserDefaults] stringForKey:@"CHILD_NAME"];
     }
     return self;
 }
@@ -30,12 +29,13 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[nameField setText:self.childName];
 }
-*/
+
 
 - (void)viewWillAppear:(BOOL)animated {
 	// to fix the controller showing under the status bar
@@ -49,6 +49,20 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+	self.childName = [textField text];
+	[textField resignFirstResponder];
+	[[NSUserDefaults standardUserDefaults] setObject:self.childName forKey:@"CHILD_NAME"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+	return YES;
+}
+
+
+-(IBAction)back:(id)sender{
+	UIWindow *window = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] window];
+	[[[window subviews] lastObject] removeFromSuperview];
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -65,8 +79,8 @@
 
 
 - (void)dealloc {
-	[window release];
-	[context release];
+	[childName release];
+	[nameField release];
     [super dealloc];
 }
 

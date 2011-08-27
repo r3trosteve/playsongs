@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>song1</key>
+	<dict>
+		<key>isLullaby</key>
+		<true/>
+		<key>isVideo</key>
+		<false/>
+		<key>localPath</key>
+		<string>Autumn Leaves.mp3</string>
+		<key>title</key>
+		<string>Autumn Leaves</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+	<key>song2</key>
+	<dict>
+		<key>isLullaby</key>
+		<true/>
+		<key>isVideo</key>
+		<false/>
+		<key>localPath</key>
+		<string>Dance all the Night.mp3</string>
+		<key>title</key>
+		<string>Dance all the Night</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+	<key>song3</key>
+	<dict>
+		<key>isLullaby</key>
+		<true/>
+		<key>isVideo</key>
+		<false/>
+		<key>localPath</key>
+		<string>Golden Slumbers.mp3</string>
+		<key>title</key>
+		<string>Golden Slumbers</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+	<key>song4</key>
+	<dict>
+		<key>isLullaby</key>
+		<true/>
+		<key>isVideo</key>
+		<true/>
+		<key>localPath</key>
+		<string>Song Video.mp4</string>
+		<key>title</key>
+		<string>Song Video</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+	<key>song5</key>
+	<dict>
+		<key>isLullaby</key>
+		<false/>
+		<key>isVideo</key>
+		<false/>
+		<key>localPath</key>
+		<string>Jack in the Box.mp3</string>
+		<key>title</key>
+		<string>Jack in the Box</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+	<key>song6</key>
+	<dict>
+		<key>isLullaby</key>
+		<false/>
+		<key>isVideo</key>
+		<false/>
+		<key>localPath</key>
+		<string>Play all the day.mp3</string>
+		<key>title</key>
+		<string>Play all the day</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+	<key>song7</key>
+	<dict>
+		<key>isLullaby</key>
+		<false/>
+		<key>isVideo</key>
+		<false/>
+		<key>localPath</key>
+		<string>Sleep Baby, Sleep.mp3</string>
+		<key>title</key>
+		<string>Sleep Baby, Sleep</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+	<key>song8</key>
+	<dict>
+		<key>isLullaby</key>
+		<false/>
+		<key>isVideo</key>
+		<false/>
+		<key>localPath</key>
+		<string>The Hello Song.mp3</string>
+		<key>title</key>
+		<string>The Hello Song</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+	<key>song9</key>
+	<dict>
+		<key>isLullaby</key>
+		<false/>
+		<key>isVideo</key>
+		<false/>
+		<key>localPath</key>
+		<string>The Magic Ring.mp3</string>
+		<key>title</key>
+		<string>The Magic Ring</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

@@ -145,12 +145,36 @@
 		2D0FB66C1407757A00F105E4 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB66B1407757A00F105E4 /* MainMenuViewController.m */; };
 		2D0FB670140775AD00F105E4 /* MainMenuViewControllerIphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB66E140775AD00F105E4 /* MainMenuViewControllerIphone.m */; };
 		2D0FB671140775AD00F105E4 /* MainMenuViewControllerIphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB66F140775AD00F105E4 /* MainMenuViewControllerIphone.xib */; };
-		2D0FB675140775CB00F105E4 /* MainMenuViewControllerIPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB673140775CB00F105E4 /* MainMenuViewControllerIPad.m */; };
-		2D0FB676140775CB00F105E4 /* MainMenuViewControllerIPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB674140775CB00F105E4 /* MainMenuViewControllerIPad.xib */; };
 		2D0FB6941407778C00F105E4 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB6931407778C00F105E4 /* UIImage+ColorAtPixel.m */; };
 		2D0FB6971407779500F105E4 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB6961407779500F105E4 /* OBShapedButton.m */; };
+		2D0FB75E14078AB000F105E4 /* MainMenuViewControllerIPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB75C14078AB000F105E4 /* MainMenuViewControllerIPad.m */; };
+		2D0FB75F14078AB000F105E4 /* MainMenuViewControllerIPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB75D14078AB000F105E4 /* MainMenuViewControllerIPad.xib */; };
+		2D0FB7681407932B00F105E4 /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB7671407932B00F105E4 /* SongsViewController.m */; };
+		2D0FB76B1407935700F105E4 /* FavouriteCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB76A1407935700F105E4 /* FavouriteCategoriesViewController.m */; };
+		2D0FB76E1407936B00F105E4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB76D1407936B00F105E4 /* SettingsViewController.m */; };
+		2D0FB7721407938600F105E4 /* SongsViewControllerIphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB7701407938600F105E4 /* SongsViewControllerIphone.m */; };
+		2D0FB7731407938600F105E4 /* SongsViewControllerIphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB7711407938600F105E4 /* SongsViewControllerIphone.xib */; };
+		2D0FB7771407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB7751407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.m */; };
+		2D0FB7781407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB7761407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.xib */; };
+		2D0FB77C140793B100F105E4 /* SettingsViewControllerIphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB77A140793B100F105E4 /* SettingsViewControllerIphone.m */; };
+		2D0FB77D140793B100F105E4 /* SettingsViewControllerIphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB77B140793B100F105E4 /* SettingsViewControllerIphone.xib */; };
+		2D39F63C1408AC2600101A9C /* Autumn Leaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6341408AC2600101A9C /* Autumn Leaves.mp3 */; };
+		2D39F63D1408AC2600101A9C /* Dance all the Night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6351408AC2600101A9C /* Dance all the Night.mp3 */; };
+		2D39F63E1408AC2600101A9C /* Golden Slumbers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6361408AC2600101A9C /* Golden Slumbers.mp3 */; };
+		2D39F63F1408AC2600101A9C /* Jack in the Box.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6371408AC2600101A9C /* Jack in the Box.mp3 */; };
+		2D39F6401408AC2600101A9C /* Play all the day.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6381408AC2600101A9C /* Play all the day.mp3 */; };
+		2D39F6411408AC2600101A9C /* Sleep Baby, Sleep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6391408AC2600101A9C /* Sleep Baby, Sleep.mp3 */; };
+		2D39F6421408AC2600101A9C /* The Hello Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F63A1408AC2600101A9C /* The Hello Song.mp3 */; };
+		2D39F6431408AC2600101A9C /* The Magic Ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F63B1408AC2600101A9C /* The Magic Ring.mp3 */; };
+		2D39F6451408ACFB00101A9C /* Song Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6441408ACFB00101A9C /* Song Video.mp4 */; };
 		2D52FEDC1404CDEF00D6B042 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52FED91404CDEF00D6B042 /* Song.m */; };
 		2D52FEDD1404CDEF00D6B042 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52FEDB1404CDEF00D6B042 /* Playlist.m */; };
+		2DA512541408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5124C1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.m */; };
+		2DA512551408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA5124D1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.xib */; };
+		2DA512561408DA280031EF12 /* SettingsViewControllerIpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5124F1408DA280031EF12 /* SettingsViewControllerIpad.m */; };
+		2DA512571408DA280031EF12 /* SettingsViewControllerIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA512501408DA280031EF12 /* SettingsViewControllerIpad.xib */; };
+		2DA512581408DA280031EF12 /* SongsViewControllerIpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA512521408DA280031EF12 /* SongsViewControllerIpad.m */; };
+		2DA512591408DA280031EF12 /* SongsViewControllerIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA512531408DA280031EF12 /* SongsViewControllerIpad.xib */; };
 		2DF0AC2214067A8800A14FA0 /* songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0AC2114067A8800A14FA0 /* songs.plist */; };
 /* End PBXBuildFile section */
 
@@ -300,17 +324,50 @@
 		2D0FB66D140775AD00F105E4 /* MainMenuViewControllerIphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewControllerIphone.h; sourceTree = "<group>"; };
 		2D0FB66E140775AD00F105E4 /* MainMenuViewControllerIphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewControllerIphone.m; sourceTree = "<group>"; };
 		2D0FB66F140775AD00F105E4 /* MainMenuViewControllerIphone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewControllerIphone.xib; sourceTree = "<group>"; };
-		2D0FB672140775CB00F105E4 /* MainMenuViewControllerIPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewControllerIPad.h; sourceTree = "<group>"; };
-		2D0FB673140775CB00F105E4 /* MainMenuViewControllerIPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewControllerIPad.m; sourceTree = "<group>"; };
-		2D0FB674140775CB00F105E4 /* MainMenuViewControllerIPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewControllerIPad.xib; sourceTree = "<group>"; };
 		2D0FB6921407778C00F105E4 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
 		2D0FB6931407778C00F105E4 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 		2D0FB6951407779500F105E4 /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
 		2D0FB6961407779500F105E4 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
+		2D0FB75B14078AB000F105E4 /* MainMenuViewControllerIPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewControllerIPad.h; path = iPad/MainMenuViewControllerIPad.h; sourceTree = "<group>"; };
+		2D0FB75C14078AB000F105E4 /* MainMenuViewControllerIPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewControllerIPad.m; path = iPad/MainMenuViewControllerIPad.m; sourceTree = "<group>"; };
+		2D0FB75D14078AB000F105E4 /* MainMenuViewControllerIPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenuViewControllerIPad.xib; path = iPad/MainMenuViewControllerIPad.xib; sourceTree = "<group>"; };
+		2D0FB7661407932B00F105E4 /* SongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsViewController.h; sourceTree = "<group>"; };
+		2D0FB7671407932B00F105E4 /* SongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsViewController.m; sourceTree = "<group>"; };
+		2D0FB7691407935700F105E4 /* FavouriteCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteCategoriesViewController.h; sourceTree = "<group>"; };
+		2D0FB76A1407935700F105E4 /* FavouriteCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteCategoriesViewController.m; sourceTree = "<group>"; };
+		2D0FB76C1407936B00F105E4 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2D0FB76D1407936B00F105E4 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2D0FB76F1407938600F105E4 /* SongsViewControllerIphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsViewControllerIphone.h; sourceTree = "<group>"; };
+		2D0FB7701407938600F105E4 /* SongsViewControllerIphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsViewControllerIphone.m; sourceTree = "<group>"; };
+		2D0FB7711407938600F105E4 /* SongsViewControllerIphone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongsViewControllerIphone.xib; sourceTree = "<group>"; };
+		2D0FB7741407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteCategoriesViewControllerIphone.h; sourceTree = "<group>"; };
+		2D0FB7751407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteCategoriesViewControllerIphone.m; sourceTree = "<group>"; };
+		2D0FB7761407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteCategoriesViewControllerIphone.xib; sourceTree = "<group>"; };
+		2D0FB779140793B100F105E4 /* SettingsViewControllerIphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewControllerIphone.h; sourceTree = "<group>"; };
+		2D0FB77A140793B100F105E4 /* SettingsViewControllerIphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewControllerIphone.m; sourceTree = "<group>"; };
+		2D0FB77B140793B100F105E4 /* SettingsViewControllerIphone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewControllerIphone.xib; sourceTree = "<group>"; };
+		2D39F6341408AC2600101A9C /* Autumn Leaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Autumn Leaves.mp3"; sourceTree = "<group>"; };
+		2D39F6351408AC2600101A9C /* Dance all the Night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dance all the Night.mp3"; sourceTree = "<group>"; };
+		2D39F6361408AC2600101A9C /* Golden Slumbers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Golden Slumbers.mp3"; sourceTree = "<group>"; };
+		2D39F6371408AC2600101A9C /* Jack in the Box.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jack in the Box.mp3"; sourceTree = "<group>"; };
+		2D39F6381408AC2600101A9C /* Play all the day.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Play all the day.mp3"; sourceTree = "<group>"; };
+		2D39F6391408AC2600101A9C /* Sleep Baby, Sleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sleep Baby, Sleep.mp3"; sourceTree = "<group>"; };
+		2D39F63A1408AC2600101A9C /* The Hello Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Hello Song.mp3"; sourceTree = "<group>"; };
+		2D39F63B1408AC2600101A9C /* The Magic Ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Magic Ring.mp3"; sourceTree = "<group>"; };
+		2D39F6441408ACFB00101A9C /* Song Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Song Video.mp4"; sourceTree = "<group>"; };
 		2D52FED81404CDEF00D6B042 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
 		2D52FED91404CDEF00D6B042 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 		2D52FEDA1404CDEF00D6B042 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
 		2D52FEDB1404CDEF00D6B042 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
+		2DA5124B1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavouriteCategoriesViewControllerIpad.h; path = iPad/FavouriteCategoriesViewControllerIpad.h; sourceTree = "<group>"; };
+		2DA5124C1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavouriteCategoriesViewControllerIpad.m; path = iPad/FavouriteCategoriesViewControllerIpad.m; sourceTree = "<group>"; };
+		2DA5124D1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavouriteCategoriesViewControllerIpad.xib; path = iPad/FavouriteCategoriesViewControllerIpad.xib; sourceTree = "<group>"; };
+		2DA5124E1408DA280031EF12 /* SettingsViewControllerIpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewControllerIpad.h; path = iPad/SettingsViewControllerIpad.h; sourceTree = "<group>"; };
+		2DA5124F1408DA280031EF12 /* SettingsViewControllerIpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewControllerIpad.m; path = iPad/SettingsViewControllerIpad.m; sourceTree = "<group>"; };
+		2DA512501408DA280031EF12 /* SettingsViewControllerIpad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewControllerIpad.xib; path = iPad/SettingsViewControllerIpad.xib; sourceTree = "<group>"; };
+		2DA512511408DA280031EF12 /* SongsViewControllerIpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SongsViewControllerIpad.h; path = iPad/SongsViewControllerIpad.h; sourceTree = "<group>"; };
+		2DA512521408DA280031EF12 /* SongsViewControllerIpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SongsViewControllerIpad.m; path = iPad/SongsViewControllerIpad.m; sourceTree = "<group>"; };
+		2DA512531408DA280031EF12 /* SongsViewControllerIpad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SongsViewControllerIpad.xib; path = iPad/SongsViewControllerIpad.xib; sourceTree = "<group>"; };
 		2DF0AC2114067A8800A14FA0 /* songs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = songs.plist; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Playsongs_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playsongs_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Playsongs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Playsongs-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -349,6 +406,15 @@
 				2D0FB66D140775AD00F105E4 /* MainMenuViewControllerIphone.h */,
 				2D0FB66E140775AD00F105E4 /* MainMenuViewControllerIphone.m */,
 				2D0FB66F140775AD00F105E4 /* MainMenuViewControllerIphone.xib */,
+				2D0FB76F1407938600F105E4 /* SongsViewControllerIphone.h */,
+				2D0FB7701407938600F105E4 /* SongsViewControllerIphone.m */,
+				2D0FB7711407938600F105E4 /* SongsViewControllerIphone.xib */,
+				2D0FB7741407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.h */,
+				2D0FB7751407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.m */,
+				2D0FB7761407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.xib */,
+				2D0FB779140793B100F105E4 /* SettingsViewControllerIphone.h */,
+				2D0FB77A140793B100F105E4 /* SettingsViewControllerIphone.m */,
+				2D0FB77B140793B100F105E4 /* SettingsViewControllerIphone.xib */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -365,6 +431,12 @@
 				8D1107310486CEB800E47090 /* Playsongs-Info.plist */,
 				2D0FB66A1407757A00F105E4 /* MainMenuViewController.h */,
 				2D0FB66B1407757A00F105E4 /* MainMenuViewController.m */,
+				2D0FB7661407932B00F105E4 /* SongsViewController.h */,
+				2D0FB7671407932B00F105E4 /* SongsViewController.m */,
+				2D0FB7691407935700F105E4 /* FavouriteCategoriesViewController.h */,
+				2D0FB76A1407935700F105E4 /* FavouriteCategoriesViewController.m */,
+				2D0FB76C1407936B00F105E4 /* SettingsViewController.h */,
+				2D0FB76D1407936B00F105E4 /* SettingsViewController.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -395,12 +467,21 @@
 		29B97317FDCFA39411CA2CEA /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				2DA5124B1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.h */,
+				2DA5124C1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.m */,
+				2DA5124D1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.xib */,
+				2DA5124E1408DA280031EF12 /* SettingsViewControllerIpad.h */,
+				2DA5124F1408DA280031EF12 /* SettingsViewControllerIpad.m */,
+				2DA512501408DA280031EF12 /* SettingsViewControllerIpad.xib */,
+				2DA512511408DA280031EF12 /* SongsViewControllerIpad.h */,
+				2DA512521408DA280031EF12 /* SongsViewControllerIpad.m */,
+				2DA512531408DA280031EF12 /* SongsViewControllerIpad.xib */,
+				2D0FB75B14078AB000F105E4 /* MainMenuViewControllerIPad.h */,
+				2D0FB75C14078AB000F105E4 /* MainMenuViewControllerIPad.m */,
+				2D0FB75D14078AB000F105E4 /* MainMenuViewControllerIPad.xib */,
 				1D3623240D0F684500981E51 /* AppDelegate_iPad.h */,
 				1D3623250D0F684500981E51 /* AppDelegate_iPad.m */,
 				28AD733E0D9D9553002E5188 /* MainWindow_iPad.xib */,
-				2D0FB672140775CB00F105E4 /* MainMenuViewControllerIPad.h */,
-				2D0FB673140775CB00F105E4 /* MainMenuViewControllerIPad.m */,
-				2D0FB674140775CB00F105E4 /* MainMenuViewControllerIPad.xib */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -585,9 +666,26 @@
 			name = OBShapedButton;
 			sourceTree = "<group>";
 		};
+		2D39F6331408AC2600101A9C /* songs */ = {
+			isa = PBXGroup;
+			children = (
+				2D39F6441408ACFB00101A9C /* Song Video.mp4 */,
+				2D39F6341408AC2600101A9C /* Autumn Leaves.mp3 */,
+				2D39F6351408AC2600101A9C /* Dance all the Night.mp3 */,
+				2D39F6361408AC2600101A9C /* Golden Slumbers.mp3 */,
+				2D39F6371408AC2600101A9C /* Jack in the Box.mp3 */,
+				2D39F6381408AC2600101A9C /* Play all the day.mp3 */,
+				2D39F6391408AC2600101A9C /* Sleep Baby, Sleep.mp3 */,
+				2D39F63A1408AC2600101A9C /* The Hello Song.mp3 */,
+				2D39F63B1408AC2600101A9C /* The Magic Ring.mp3 */,
+			);
+			path = songs;
+			sourceTree = "<group>";
+		};
 		2DB5D4B614062B9C00C2B807 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D39F6331408AC2600101A9C /* songs */,
 				2D0FB3AD14075D7100F105E4 /* favourites */,
 				2D0FB3C514075D7100F105E4 /* home */,
 				2D0FB3D214075D7100F105E4 /* menu */,
@@ -773,7 +871,22 @@
 				2D0FB4A414075D7100F105E4 /* fb@2x.png in Resources */,
 				2D0FB4A514075D7100F105E4 /* fb~ipad.png in Resources */,
 				2D0FB671140775AD00F105E4 /* MainMenuViewControllerIphone.xib in Resources */,
-				2D0FB676140775CB00F105E4 /* MainMenuViewControllerIPad.xib in Resources */,
+				2D0FB75F14078AB000F105E4 /* MainMenuViewControllerIPad.xib in Resources */,
+				2D0FB7731407938600F105E4 /* SongsViewControllerIphone.xib in Resources */,
+				2D0FB7781407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.xib in Resources */,
+				2D0FB77D140793B100F105E4 /* SettingsViewControllerIphone.xib in Resources */,
+				2D39F63C1408AC2600101A9C /* Autumn Leaves.mp3 in Resources */,
+				2D39F63D1408AC2600101A9C /* Dance all the Night.mp3 in Resources */,
+				2D39F63E1408AC2600101A9C /* Golden Slumbers.mp3 in Resources */,
+				2D39F63F1408AC2600101A9C /* Jack in the Box.mp3 in Resources */,
+				2D39F6401408AC2600101A9C /* Play all the day.mp3 in Resources */,
+				2D39F6411408AC2600101A9C /* Sleep Baby, Sleep.mp3 in Resources */,
+				2D39F6421408AC2600101A9C /* The Hello Song.mp3 in Resources */,
+				2D39F6431408AC2600101A9C /* The Magic Ring.mp3 in Resources */,
+				2D39F6451408ACFB00101A9C /* Song Video.mp4 in Resources */,
+				2DA512551408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.xib in Resources */,
+				2DA512571408DA280031EF12 /* SettingsViewControllerIpad.xib in Resources */,
+				2DA512591408DA280031EF12 /* SongsViewControllerIpad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,9 +907,18 @@
 				2D0FB5B214076B0E00F105E4 /* UIDevice+Hardware.m in Sources */,
 				2D0FB66C1407757A00F105E4 /* MainMenuViewController.m in Sources */,
 				2D0FB670140775AD00F105E4 /* MainMenuViewControllerIphone.m in Sources */,
-				2D0FB675140775CB00F105E4 /* MainMenuViewControllerIPad.m in Sources */,
 				2D0FB6941407778C00F105E4 /* UIImage+ColorAtPixel.m in Sources */,
 				2D0FB6971407779500F105E4 /* OBShapedButton.m in Sources */,
+				2D0FB75E14078AB000F105E4 /* MainMenuViewControllerIPad.m in Sources */,
+				2D0FB7681407932B00F105E4 /* SongsViewController.m in Sources */,
+				2D0FB76B1407935700F105E4 /* FavouriteCategoriesViewController.m in Sources */,
+				2D0FB76E1407936B00F105E4 /* SettingsViewController.m in Sources */,
+				2D0FB7721407938600F105E4 /* SongsViewControllerIphone.m in Sources */,
+				2D0FB7771407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.m in Sources */,
+				2D0FB77C140793B100F105E4 /* SettingsViewControllerIphone.m in Sources */,
+				2DA512541408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.m in Sources */,
+				2DA512561408DA280031EF12 /* SettingsViewControllerIpad.m in Sources */,
+				2DA512581408DA280031EF12 /* SongsViewControllerIpad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

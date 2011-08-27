@@ -1,32 +1,24 @@
-    //
-//  MainMenuViewController.m
+//
+//  FavouriteCategoriesViewControllerIphone.m
 //  Playsongs
 //
 //  Created by Bala Bhadra Maharjan on 8/26/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "MainMenuViewController.h"
+#import "FavouriteCategoriesViewControllerIphone.h"
 
-@implementation MainMenuViewController
 
-@synthesize window;
-@synthesize context;
+@implementation FavouriteCategoriesViewControllerIphone
+
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-
+/*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.window = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] window];
-		self.context = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] managedObjectContext];
+        // Custom initialization.
     }
     return self;
-}
-
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
 }
 */
 
@@ -36,11 +28,6 @@
     [super viewDidLoad];
 }
 */
-
-- (void)viewWillAppear:(BOOL)animated {
-	// to fix the controller showing under the status bar
-	self.view.frame = [[UIScreen mainScreen] applicationFrame];
-}
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -65,8 +52,6 @@
 
 
 - (void)dealloc {
-	[window release];
-	[context release];
     [super dealloc];
 }
 

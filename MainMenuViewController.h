@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
+@class AppDelegate_Shared;
 
 @interface MainMenuViewController : UIViewController {
-
+	UIWindow *window;
+	NSManagedObjectContext *context;
 }
+
+@property (nonatomic, retain) UIWindow *window;
+@property (nonatomic, retain) NSManagedObjectContext *context;
 
 @end

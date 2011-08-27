@@ -11,23 +11,42 @@
 
 @implementation MainMenuViewControllerIPad
 
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
-}
-*/
+@synthesize songsController;
+@synthesize favController;
+@synthesize settingsController;
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
+
+-(IBAction)viewPlaySongs:(id)sender{
+	self.songsController = [[[SongsViewControllerIpad alloc] initWithNibName:@"SongsViewControllerIpad" bundle:nil] autorelease];
+	songsController.isLullaby = NO;
+	songsController.songs = [Song getSongs:NO managedObjectContext:self.context];
+	[self.window addSubview:songsController.view];
 }
-*/
+
+
+-(IBAction)viewLullabies:(id)sender{
+	self.songsController = [[[SongsViewControllerIpad alloc] initWithNibName:@"SongsViewControllerIpad" bundle:nil] autorelease];
+	songsController.isLullaby = YES;
+	songsController.songs = [Song getSongs:YES managedObjectContext:self.context]; 
+	[self.window addSubview:songsController.view];
+}
+
+
+-(IBAction)viewFavourites:(id)sender{
+	
+}
+
+
+-(IBAction)viewInstruments:(id)sender{
+	
+}
+
+
+-(IBAction)viewSettings:(id)sender{
+	self.settingsController = [[[SettingsViewControllerIpad alloc] initWithNibName:@"SettingsViewControllerIpad" bundle:nil] autorelease];
+	[window addSubview:self.settingsController.view];
+}
+
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -52,6 +71,9 @@
 
 
 - (void)dealloc {
+	[songsController release];
+	[favController release];
+	[settingsController release];
     [super dealloc];
 }
 
