@@ -8,11 +8,13 @@
 
 #import "AppDelegate_Shared.h"
 #import "Song.h"
+#import "SettingsViewController.h"
 
 
 @implementation AppDelegate_Shared
 
 @synthesize window;
+@synthesize nav;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -36,6 +38,7 @@
 		
 	home = [[HomeAnimationController alloc] init];
 	[window addSubview:home.view];
+	
     
     [self.window makeKeyAndVisible];
     return YES;
@@ -54,6 +57,14 @@
     [self saveContext];
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+	Facebook *facebook = [(SettingsViewController *)[[nav viewControllers] objectAtIndex:1] facebook];
+	if (facebook) {
+		return [facebook handleOpenURL:url];
+	}
+	return NO;
+	
+}
 
 - (void)saveContext {
     
@@ -184,6 +195,7 @@
     [managedObjectModel_ release];
     [persistentStoreCoordinator_ release];
 	[home release];
+	[nav release];
     [window release];
     [super dealloc];
 }

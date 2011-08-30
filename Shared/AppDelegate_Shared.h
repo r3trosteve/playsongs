@@ -15,6 +15,7 @@
     
     UIWindow *window;
 	HomeAnimationController *home;
+	UINavigationController *nav;
     
 @private
     NSManagedObjectContext *managedObjectContext_;
@@ -23,6 +24,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) UINavigationController *nav;
 
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;

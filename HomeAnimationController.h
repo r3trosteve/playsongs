@@ -13,7 +13,6 @@
 @interface HomeAnimationController : UIViewController {
 	MainMenuViewControllerIphone *mmIphone;
 	MainMenuViewControllerIPad *mmIpad;
-	UINavigationController *nav;
 }
 
 @property (nonatomic, retain) MainMenuViewControllerIphone *mmIphone;

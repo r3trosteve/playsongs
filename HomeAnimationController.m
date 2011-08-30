@@ -101,22 +101,20 @@
 	[window.layer addAnimation:transition forKey:@"FADE_ANIM"];
 	
 	[[window subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
-	
+	AppDelegate_Shared *delegate = (AppDelegate_Shared *)[[UIApplication sharedApplication] delegate];
 	if ([UIDevice isIPad]) {
 		self.mmIpad = [[[MainMenuViewControllerIPad alloc] initWithNibName:@"MainMenuViewControllerIPad" bundle:nil] autorelease];
-		nav = [[UINavigationController alloc] initWithRootViewController:self.mmIpad];
-		[window addSubview:nav.view];
-		[nav setNavigationBarHidden:YES];
+		delegate.nav = [[UINavigationController alloc] initWithRootViewController:self.mmIpad];
+		[window addSubview:delegate.nav.view];
+		[delegate.nav setNavigationBarHidden:YES];
 	}
 	else {
 		self.mmIphone = [[[MainMenuViewControllerIphone alloc] initWithNibName:@"MainMenuViewControllerIphone" bundle:nil] autorelease];
-		nav = [[UINavigationController alloc] initWithRootViewController:self.mmIphone];
-		[window addSubview:nav.view];
-		[nav setNavigationBarHidden:YES];
+		delegate.nav = [[UINavigationController alloc] initWithRootViewController:self.mmIphone];
+		[window addSubview:delegate.nav.view];
+		[delegate.nav setNavigationBarHidden:YES];
 	}
 }
-
-
 
 
 // Override to allow orientations other than the default portrait orientation.
@@ -151,7 +149,6 @@
 	[mmIphone release];
 	[mmIpad release];
 	
-	[nav release];
     [super dealloc];
 }
 
