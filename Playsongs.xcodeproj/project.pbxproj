@@ -169,12 +169,15 @@
 		2D39F6451408ACFB00101A9C /* Song Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6441408ACFB00101A9C /* Song Video.mp4 */; };
 		2D52FEDC1404CDEF00D6B042 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52FED91404CDEF00D6B042 /* Song.m */; };
 		2D52FEDD1404CDEF00D6B042 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52FEDB1404CDEF00D6B042 /* Playlist.m */; };
+		2DA402F8140CCD540012C8E4 /* HomeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA402F7140CCD540012C8E4 /* HomeAnimationController.m */; };
 		2DA512541408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5124C1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.m */; };
 		2DA512551408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA5124D1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.xib */; };
 		2DA512561408DA280031EF12 /* SettingsViewControllerIpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5124F1408DA280031EF12 /* SettingsViewControllerIpad.m */; };
 		2DA512571408DA280031EF12 /* SettingsViewControllerIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA512501408DA280031EF12 /* SettingsViewControllerIpad.xib */; };
 		2DA512581408DA280031EF12 /* SongsViewControllerIpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA512521408DA280031EF12 /* SongsViewControllerIpad.m */; };
 		2DA512591408DA280031EF12 /* SongsViewControllerIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA512531408DA280031EF12 /* SongsViewControllerIpad.xib */; };
+		2DD591EC140C9975006D9B7A /* CustomMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD591EB140C9975006D9B7A /* CustomMoviePlayerViewController.m */; };
+		2DE4DA9914093EA7004C27DD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE4DA9814093EA7004C27DD /* MediaPlayer.framework */; };
 		2DF0AC2214067A8800A14FA0 /* songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0AC2114067A8800A14FA0 /* songs.plist */; };
 /* End PBXBuildFile section */
 
@@ -359,6 +362,8 @@
 		2D52FED91404CDEF00D6B042 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 		2D52FEDA1404CDEF00D6B042 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
 		2D52FEDB1404CDEF00D6B042 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
+		2DA402F6140CCD540012C8E4 /* HomeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeAnimationController.h; sourceTree = "<group>"; };
+		2DA402F7140CCD540012C8E4 /* HomeAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeAnimationController.m; sourceTree = "<group>"; };
 		2DA5124B1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavouriteCategoriesViewControllerIpad.h; path = iPad/FavouriteCategoriesViewControllerIpad.h; sourceTree = "<group>"; };
 		2DA5124C1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavouriteCategoriesViewControllerIpad.m; path = iPad/FavouriteCategoriesViewControllerIpad.m; sourceTree = "<group>"; };
 		2DA5124D1408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavouriteCategoriesViewControllerIpad.xib; path = iPad/FavouriteCategoriesViewControllerIpad.xib; sourceTree = "<group>"; };
@@ -368,6 +373,9 @@
 		2DA512511408DA280031EF12 /* SongsViewControllerIpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SongsViewControllerIpad.h; path = iPad/SongsViewControllerIpad.h; sourceTree = "<group>"; };
 		2DA512521408DA280031EF12 /* SongsViewControllerIpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SongsViewControllerIpad.m; path = iPad/SongsViewControllerIpad.m; sourceTree = "<group>"; };
 		2DA512531408DA280031EF12 /* SongsViewControllerIpad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SongsViewControllerIpad.xib; path = iPad/SongsViewControllerIpad.xib; sourceTree = "<group>"; };
+		2DD591EA140C9975006D9B7A /* CustomMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMoviePlayerViewController.h; sourceTree = "<group>"; };
+		2DD591EB140C9975006D9B7A /* CustomMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMoviePlayerViewController.m; sourceTree = "<group>"; };
+		2DE4DA9814093EA7004C27DD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2DF0AC2114067A8800A14FA0 /* songs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = songs.plist; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Playsongs_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playsongs_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Playsongs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Playsongs-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -383,6 +391,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				28EEBFDD1118E19E00187D67 /* CoreData.framework in Frameworks */,
 				2D0FB650140773D000F105E4 /* QuartzCore.framework in Frameworks */,
+				2DE4DA9914093EA7004C27DD /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +431,8 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2DD591EA140C9975006D9B7A /* CustomMoviePlayerViewController.h */,
+				2DD591EB140C9975006D9B7A /* CustomMoviePlayerViewController.m */,
 				2D0FB6AA140777FA00F105E4 /* OBShapedButton */,
 				2D0FB5B014076B0E00F105E4 /* UIDevice+Hardware.h */,
 				2D0FB5B114076B0E00F105E4 /* UIDevice+Hardware.m */,
@@ -437,6 +448,8 @@
 				2D0FB76A1407935700F105E4 /* FavouriteCategoriesViewController.m */,
 				2D0FB76C1407936B00F105E4 /* SettingsViewController.h */,
 				2D0FB76D1407936B00F105E4 /* SettingsViewController.m */,
+				2DA402F6140CCD540012C8E4 /* HomeAnimationController.h */,
+				2DA402F7140CCD540012C8E4 /* HomeAnimationController.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -494,6 +507,7 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				28EEBFDC1118E19E00187D67 /* CoreData.framework */,
 				2D0FB64F140773D000F105E4 /* QuartzCore.framework */,
+				2DE4DA9814093EA7004C27DD /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -919,6 +933,8 @@
 				2DA512541408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.m in Sources */,
 				2DA512561408DA280031EF12 /* SettingsViewControllerIpad.m in Sources */,
 				2DA512581408DA280031EF12 /* SongsViewControllerIpad.m in Sources */,
+				2DD591EC140C9975006D9B7A /* CustomMoviePlayerViewController.m in Sources */,
+				2DA402F8140CCD540012C8E4 /* HomeAnimationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

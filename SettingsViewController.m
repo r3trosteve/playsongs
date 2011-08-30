@@ -42,13 +42,6 @@
 	self.view.frame = [[UIScreen mainScreen] applicationFrame];
 }
 
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
 	self.childName = [textField text];
@@ -60,8 +53,9 @@
 
 
 -(IBAction)back:(id)sender{
-	UIWindow *window = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] window];
-	[[[window subviews] lastObject] removeFromSuperview];
+	//UIWindow *window = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] window];
+	//[[[window subviews] lastObject] removeFromSuperview];
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

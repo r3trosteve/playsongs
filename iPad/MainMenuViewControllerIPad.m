@@ -20,7 +20,7 @@
 	self.songsController = [[[SongsViewControllerIpad alloc] initWithNibName:@"SongsViewControllerIpad" bundle:nil] autorelease];
 	songsController.isLullaby = NO;
 	songsController.songs = [Song getSongs:NO managedObjectContext:self.context];
-	[self.window addSubview:songsController.view];
+	[self.navigationController pushViewController:songsController animated:YES];
 }
 
 
@@ -28,7 +28,7 @@
 	self.songsController = [[[SongsViewControllerIpad alloc] initWithNibName:@"SongsViewControllerIpad" bundle:nil] autorelease];
 	songsController.isLullaby = YES;
 	songsController.songs = [Song getSongs:YES managedObjectContext:self.context]; 
-	[self.window addSubview:songsController.view];
+	[self.navigationController pushViewController:songsController animated:YES];
 }
 
 
@@ -44,16 +44,18 @@
 
 -(IBAction)viewSettings:(id)sender{
 	self.settingsController = [[[SettingsViewControllerIpad alloc] initWithNibName:@"SettingsViewControllerIpad" bundle:nil] autorelease];
-	[window addSubview:self.settingsController.view];
+	[self.navigationController pushViewController:settingsController animated:YES];
 }
-
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Overriden to allow any orientation.
-    return YES;
+	if(interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
+			
+		return YES;
+	}
+	else
+		return NO;
 }
-
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

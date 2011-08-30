@@ -19,7 +19,7 @@
 	self.songsController = [[[SongsViewControllerIphone alloc] initWithNibName:@"SongsViewControllerIphone" bundle:nil] autorelease];
 	songsController.isLullaby = NO;
 	songsController.songs = [Song getSongs:NO managedObjectContext:self.context];
-	[self.window addSubview:songsController.view];
+	[self.navigationController pushViewController:songsController animated:YES];
 }
 
 
@@ -27,7 +27,7 @@
 	self.songsController = [[[SongsViewControllerIphone alloc] initWithNibName:@"SongsViewControllerIphone" bundle:nil] autorelease];
 	songsController.isLullaby = YES;
 	songsController.songs = [Song getSongs:YES managedObjectContext:self.context]; 
-	[self.window addSubview:songsController.view];
+	[self.navigationController pushViewController:songsController animated:YES];
 }
 
 
@@ -43,17 +43,9 @@
 
 -(IBAction)viewSettings:(id)sender{
 	self.settingsController = [[[SettingsViewControllerIphone alloc] initWithNibName:@"SettingsViewControllerIphone" bundle:nil] autorelease];
-	[window addSubview:self.settingsController.view];
+	[self.navigationController pushViewController:settingsController animated:YES];
 	
 }
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

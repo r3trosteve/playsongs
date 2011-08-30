@@ -57,7 +57,7 @@
 					<object class="IBUIImageView" id="261350213">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{38, 28}, {141, 422}}</string>
+						<string key="NSFrame">{{38, 41}, {141, 422}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -69,7 +69,7 @@
 					<object class="IBUIButton" id="216837973">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{34, 49}, {226, 100}}</string>
+						<string key="NSFrame">{{27, 79}, {226, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -105,7 +105,7 @@
 					<object class="IBUIButton" id="1045623558">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{27, 102}, {233, 104}}</string>
+						<string key="NSFrame">{{15, 131}, {233, 104}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -131,7 +131,7 @@
 					<object class="IBUIButton" id="693503852">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{18, 156}, {229, 102}}</string>
+						<string key="NSFrame">{{1, 183}, {229, 102}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -154,36 +154,10 @@
 							<string key="NSResourceName">lullabies.png</string>
 						</object>
 					</object>
-					<object class="IBUIButton" id="212371235">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{13, 209}, {228, 103}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="692195460"/>
-						<reference key="IBUIHighlightedTitleColor" ref="688176995"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="884841237"/>
-						<object class="NSCustomResource" key="IBUIHighlightedBackgroundImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">instruments_over.png</string>
-						</object>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">instruments.png</string>
-						</object>
-					</object>
 					<object class="IBUIButton" id="220377297">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{1, 262}, {224, 101}}</string>
+						<string key="NSFrame">{{1, 238}, {231, 106}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -260,15 +234,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">viewInstruments:</string>
-						<reference key="source" ref="212371235"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">14</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">viewSettings:</string>
 						<reference key="source" ref="220377297"/>
 						<reference key="destination" ref="372490531"/>
@@ -295,9 +260,8 @@
 							<reference ref="261350213"/>
 							<reference ref="216837973"/>
 							<reference ref="1045623558"/>
-							<reference ref="693503852"/>
-							<reference ref="212371235"/>
 							<reference ref="220377297"/>
+							<reference ref="693503852"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -338,11 +302,6 @@
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">9</int>
-						<reference key="object" ref="212371235"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
 						<reference key="object" ref="220377297"/>
 						<reference key="parent" ref="191373211"/>
@@ -372,9 +331,6 @@
 					<string>8.CustomClassName</string>
 					<string>8.IBPluginDependency</string>
 					<string>8.IBViewBoundsToFrameTransform</string>
-					<string>9.CustomClassName</string>
-					<string>9.IBPluginDependency</string>
-					<string>9.IBViewBoundsToFrameTransform</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -385,7 +341,7 @@
 					<string>OBShapedButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABBsAAAw5yAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABBIAAAw6YAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -400,17 +356,12 @@
 					<string>OBShapedButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCDAAAwxgAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABB2AAAw0wAAA</bytes>
 					</object>
 					<string>OBShapedButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCDAAAw08AAA</bytes>
-					</object>
-					<string>OBShapedButton</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABBuAAAw4GAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABBIAAAw4iAAA</bytes>
 					</object>
 				</object>
 			</object>
@@ -691,6 +642,13 @@
 					<string key="className">UIViewController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">MediaPlayer.framework/Headers/MPMoviePlayerViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UIViewController</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UINavigationController.h</string>
 					</object>
 				</object>
@@ -744,8 +702,6 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>favourites.png</string>
 				<string>favourites_over.png</string>
-				<string>instruments.png</string>
-				<string>instruments_over.png</string>
 				<string>lullabies.png</string>
 				<string>lullabies_over.png</string>
 				<string>main_menu_bg.png</string>
@@ -759,15 +715,13 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{226, 100}</string>
 				<string>{226, 100}</string>
-				<string>{228, 103}</string>
-				<string>{228, 103}</string>
 				<string>{229, 102}</string>
 				<string>{229, 102}</string>
 				<string>{320, 480}</string>
 				<string>{233, 104}</string>
 				<string>{233, 104}</string>
-				<string>{224, 101}</string>
-				<string>{224, 101}</string>
+				<string>{231, 106}</string>
+				<string>{231, 106}</string>
 				<string>{141, 422}</string>
 			</object>
 		</object>

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Song.h"
+#import "CustomMoviePlayerViewController.h"
 
 @interface SongsViewController : UIViewController {
 	IBOutlet UIButton *song1;
@@ -30,6 +31,8 @@
 	NSArray *songs;
 	NSInteger currentPage;
 	
+	CustomMoviePlayerViewController *moviePlayer;
+	
 }
 
 @property (nonatomic, assign) BOOL isLullaby;
@@ -42,5 +45,6 @@
 -(IBAction)nextPage:(id)sender;
 -(IBAction)previousPage:(id)sender;
 -(IBAction)backToMenu:(id)sender;
+-(IBAction)playSong:(id)sender;
 
 @end

@@ -9,6 +9,7 @@
 #import "SongsViewController.h"
 #import "AppDelegate_Shared.h"
 
+
 @implementation SongsViewController
 
 @synthesize isLullaby;
@@ -125,6 +126,7 @@
 		currentPage++;
 		[self pageChanged];
 	}
+
 }	
 
 
@@ -136,10 +138,40 @@
 }
 
 -(IBAction)backToMenu:(id)sender{
-	UIWindow *window = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] window];
-	[[[window subviews] lastObject] removeFromSuperview];
+	//UIWindow *window = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] window];
+//	[[[window subviews] lastObject] removeFromSuperview];
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
+
+-(IBAction)playSong:(id)sender{
+	NSInteger index = 0;
+	if ((UIButton *)sender == song1) {
+		index = 0;
+	}
+	else if ((UIButton *)sender == song2) {
+		index = 1;
+	}
+	else if ((UIButton *)sender == song3) {
+		index = 2;
+	}
+	else if ((UIButton *)sender == song4) {
+		index = 3;
+	}
+	index = currentPage * 4 + index;
+	if(index < [songs count]){
+		Song *song = [songs objectAtIndex:index];
+		
+		NSString *filePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], song.localPath];
+		moviePlayer = [[[CustomMoviePlayerViewController alloc] initWithPath:filePath] autorelease];
+		
+		// Show the movie player as modal
+		[self presentModalViewController:moviePlayer animated:YES];
+		
+		// Prep and play the movie
+		[moviePlayer readyPlayer];
+	}
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
