@@ -7,10 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Playlist.h"
 
-
-@interface FavouriteCategoriesViewController : UIViewController {
-
+@interface FavouriteCategoriesViewController : UIViewController<UIAlertViewDelegate, UITextFieldDelegate> {
+	IBOutlet UIScrollView *scrollView;
+	NSMutableArray * playlists;
+	NSManagedObjectContext *context;
+	NSMutableArray *categoryViews;
+	NSInteger deleteIndex;
+	
+	UITextField *categoryNameField;
+	UIAlertView *addAlert;
 }
 
+@property (nonatomic, retain) NSArray *playlists;
+@property (nonatomic, retain) NSManagedObjectContext *context;
+@property (nonatomic, retain) UITextField *categoryNameField;
+@property (nonatomic, retain) UIAlertView *addAlert;
+
+-(IBAction)addFavCategory:(id)sender;
+-(IBAction)backToMenu:(id)sender;
 @end

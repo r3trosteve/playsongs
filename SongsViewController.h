@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Song.h"
 #import "CustomMoviePlayerViewController.h"
+#import "Playlist.h"
 
 @interface SongsViewController : UIViewController {
 	IBOutlet UIButton *song1;
@@ -32,12 +33,23 @@
 	NSInteger currentPage;
 	
 	CustomMoviePlayerViewController *moviePlayer;
+	CGRect favFrame;
+	
+	IBOutlet UIView *favView;
+	IBOutlet UITableView *tblView;
+	
+	NSArray *playlists;
+	
+	NSManagedObjectContext *context;
+	
+	Song *currentSong;
 	
 }
 
 @property (nonatomic, assign) BOOL isLullaby;
 @property (nonatomic, assign) NSInteger currentPage;
 @property (nonatomic, retain) NSArray *songs;
+@property (nonatomic, retain) Song *currentSong;
 
 -(Song *)songForIndex:(NSInteger)index;
 -(void)pageChanged;
@@ -46,5 +58,8 @@
 -(IBAction)previousPage:(id)sender;
 -(IBAction)backToMenu:(id)sender;
 -(IBAction)playSong:(id)sender;
+-(IBAction)hideFavSelection:(id)sender;
+-(IBAction)showFavSelection:(id)sender;
+-(IBAction)favSelectionDone:(id)sender;
 
 @end

@@ -33,7 +33,10 @@
 
 
 -(IBAction)viewFavourites:(id)sender{
-	
+	self.favController = [[[FavouriteCategoriesViewControllerIpad alloc] initWithNibName:@"FavouriteCategoriesViewControllerIpad" bundle:nil] autorelease];
+	favController.context = self.context;
+	favController.playlists = [[[Playlist getPlaylists:self.context] mutableCopy] autorelease];
+	[self.navigationController pushViewController:favController animated:YES];
 }
 
 

@@ -7,12 +7,20 @@
 //
 
 #import "Playlist.h"
-
 #import "Song.h"
 
 @implementation Playlist 
 
 @dynamic title;
 @dynamic favouriteSong;
+
++(NSArray *)getPlaylists:(NSManagedObjectContext *)context{
+	NSFetchRequest *fetchRequest = [[[NSFetchRequest alloc] init] autorelease];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Playlist" inManagedObjectContext:context];
+	[fetchRequest setEntity:entity];
+	NSError *error;
+	NSArray *playlists = [context executeFetchRequest:fetchRequest error:&error];
+	return playlists;
+}
 
 @end

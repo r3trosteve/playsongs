@@ -17,6 +17,8 @@
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSSet* favouriteSong;
 
++(NSArray *)getPlaylists:(NSManagedObjectContext *)managedObjectContext;
+
 @end
 
 

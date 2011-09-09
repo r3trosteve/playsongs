@@ -18,6 +18,16 @@
 		28AD733F0D9D9553002E5188 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow_iPad.xib */; };
 		28EEBFDD1118E19E00187D67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EEBFDC1118E19E00187D67 /* CoreData.framework */; };
 		28EEC04B1118E28000187D67 /* AppDelegate_Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */; };
+		2D0C2A2B1414D38900B14EDC /* Don't you cry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A211414D38900B14EDC /* Don't you cry.mp3 */; };
+		2D0C2A2C1414D38900B14EDC /* Come little.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A221414D38900B14EDC /* Come little.mp3 */; };
+		2D0C2A2D1414D38900B14EDC /* Last night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A231414D38900B14EDC /* Last night.mp3 */; };
+		2D0C2A2E1414D38900B14EDC /* Little snowflakes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A241414D38900B14EDC /* Little snowflakes.mp3 */; };
+		2D0C2A2F1414D38900B14EDC /* Mr Sun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A251414D38900B14EDC /* Mr Sun.mp3 */; };
+		2D0C2A301414D38900B14EDC /* Peekaboo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A261414D38900B14EDC /* Peekaboo.mp3 */; };
+		2D0C2A311414D38900B14EDC /* This baby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A271414D38900B14EDC /* This baby.mp3 */; };
+		2D0C2A321414D38900B14EDC /* Together.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A281414D38900B14EDC /* Together.mp3 */; };
+		2D0C2A331414D38900B14EDC /* Truck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A291414D38900B14EDC /* Truck.mp3 */; };
+		2D0C2A341414D38900B14EDC /* Up and down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A2A1414D38900B14EDC /* Up and down.mp3 */; };
 		2D0FB42C14075D7100F105E4 /* add_favourite.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB3AE14075D7100F105E4 /* add_favourite.png */; };
 		2D0FB42D14075D7100F105E4 /* add_favourite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB3AF14075D7100F105E4 /* add_favourite@2x.png */; };
 		2D0FB42E14075D7100F105E4 /* add_favourite~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB3B014075D7100F105E4 /* add_favourite~ipad.png */; };
@@ -158,15 +168,6 @@
 		2D0FB7781407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB7761407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.xib */; };
 		2D0FB77C140793B100F105E4 /* SettingsViewControllerIphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB77A140793B100F105E4 /* SettingsViewControllerIphone.m */; };
 		2D0FB77D140793B100F105E4 /* SettingsViewControllerIphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB77B140793B100F105E4 /* SettingsViewControllerIphone.xib */; };
-		2D39F63C1408AC2600101A9C /* Autumn Leaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6341408AC2600101A9C /* Autumn Leaves.mp3 */; };
-		2D39F63D1408AC2600101A9C /* Dance all the Night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6351408AC2600101A9C /* Dance all the Night.mp3 */; };
-		2D39F63E1408AC2600101A9C /* Golden Slumbers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6361408AC2600101A9C /* Golden Slumbers.mp3 */; };
-		2D39F63F1408AC2600101A9C /* Jack in the Box.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6371408AC2600101A9C /* Jack in the Box.mp3 */; };
-		2D39F6401408AC2600101A9C /* Play all the day.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6381408AC2600101A9C /* Play all the day.mp3 */; };
-		2D39F6411408AC2600101A9C /* Sleep Baby, Sleep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6391408AC2600101A9C /* Sleep Baby, Sleep.mp3 */; };
-		2D39F6421408AC2600101A9C /* The Hello Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F63A1408AC2600101A9C /* The Hello Song.mp3 */; };
-		2D39F6431408AC2600101A9C /* The Magic Ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F63B1408AC2600101A9C /* The Magic Ring.mp3 */; };
-		2D39F6451408ACFB00101A9C /* Song Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D39F6441408ACFB00101A9C /* Song Video.mp4 */; };
 		2D52FEDC1404CDEF00D6B042 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52FED91404CDEF00D6B042 /* Song.m */; };
 		2D52FEDD1404CDEF00D6B042 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52FEDB1404CDEF00D6B042 /* Playlist.m */; };
 		2DA402F8140CCD540012C8E4 /* HomeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA402F7140CCD540012C8E4 /* HomeAnimationController.m */; };
@@ -208,6 +209,16 @@
 		28EEC0491118E28000187D67 /* AppDelegate_Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate_Shared.h; path = Shared/AppDelegate_Shared.h; sourceTree = "<group>"; };
 		28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate_Shared.m; path = Shared/AppDelegate_Shared.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
+		2D0C2A211414D38900B14EDC /* Don't you cry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Don't you cry.mp3"; sourceTree = "<group>"; };
+		2D0C2A221414D38900B14EDC /* Come little.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Come little.mp3"; sourceTree = "<group>"; };
+		2D0C2A231414D38900B14EDC /* Last night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Last night.mp3"; sourceTree = "<group>"; };
+		2D0C2A241414D38900B14EDC /* Little snowflakes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Little snowflakes.mp3"; sourceTree = "<group>"; };
+		2D0C2A251414D38900B14EDC /* Mr Sun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mr Sun.mp3"; sourceTree = "<group>"; };
+		2D0C2A261414D38900B14EDC /* Peekaboo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Peekaboo.mp3; sourceTree = "<group>"; };
+		2D0C2A271414D38900B14EDC /* This baby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "This baby.mp3"; sourceTree = "<group>"; };
+		2D0C2A281414D38900B14EDC /* Together.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Together.mp3; sourceTree = "<group>"; };
+		2D0C2A291414D38900B14EDC /* Truck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Truck.mp3; sourceTree = "<group>"; };
+		2D0C2A2A1414D38900B14EDC /* Up and down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Up and down.mp3"; sourceTree = "<group>"; };
 		2D0FB3AE14075D7100F105E4 /* add_favourite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_favourite.png; sourceTree = "<group>"; };
 		2D0FB3AF14075D7100F105E4 /* add_favourite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_favourite@2x.png"; sourceTree = "<group>"; };
 		2D0FB3B014075D7100F105E4 /* add_favourite~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_favourite~ipad.png"; sourceTree = "<group>"; };
@@ -360,15 +371,6 @@
 		2D0FB779140793B100F105E4 /* SettingsViewControllerIphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewControllerIphone.h; sourceTree = "<group>"; };
 		2D0FB77A140793B100F105E4 /* SettingsViewControllerIphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewControllerIphone.m; sourceTree = "<group>"; };
 		2D0FB77B140793B100F105E4 /* SettingsViewControllerIphone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewControllerIphone.xib; sourceTree = "<group>"; };
-		2D39F6341408AC2600101A9C /* Autumn Leaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Autumn Leaves.mp3"; sourceTree = "<group>"; };
-		2D39F6351408AC2600101A9C /* Dance all the Night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dance all the Night.mp3"; sourceTree = "<group>"; };
-		2D39F6361408AC2600101A9C /* Golden Slumbers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Golden Slumbers.mp3"; sourceTree = "<group>"; };
-		2D39F6371408AC2600101A9C /* Jack in the Box.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jack in the Box.mp3"; sourceTree = "<group>"; };
-		2D39F6381408AC2600101A9C /* Play all the day.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Play all the day.mp3"; sourceTree = "<group>"; };
-		2D39F6391408AC2600101A9C /* Sleep Baby, Sleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sleep Baby, Sleep.mp3"; sourceTree = "<group>"; };
-		2D39F63A1408AC2600101A9C /* The Hello Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Hello Song.mp3"; sourceTree = "<group>"; };
-		2D39F63B1408AC2600101A9C /* The Magic Ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Magic Ring.mp3"; sourceTree = "<group>"; };
-		2D39F6441408ACFB00101A9C /* Song Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Song Video.mp4"; sourceTree = "<group>"; };
 		2D52FED81404CDEF00D6B042 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
 		2D52FED91404CDEF00D6B042 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 		2D52FEDA1404CDEF00D6B042 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
@@ -718,15 +720,16 @@
 		2D39F6331408AC2600101A9C /* songs */ = {
 			isa = PBXGroup;
 			children = (
-				2D39F6441408ACFB00101A9C /* Song Video.mp4 */,
-				2D39F6341408AC2600101A9C /* Autumn Leaves.mp3 */,
-				2D39F6351408AC2600101A9C /* Dance all the Night.mp3 */,
-				2D39F6361408AC2600101A9C /* Golden Slumbers.mp3 */,
-				2D39F6371408AC2600101A9C /* Jack in the Box.mp3 */,
-				2D39F6381408AC2600101A9C /* Play all the day.mp3 */,
-				2D39F6391408AC2600101A9C /* Sleep Baby, Sleep.mp3 */,
-				2D39F63A1408AC2600101A9C /* The Hello Song.mp3 */,
-				2D39F63B1408AC2600101A9C /* The Magic Ring.mp3 */,
+				2D0C2A211414D38900B14EDC /* Don't you cry.mp3 */,
+				2D0C2A221414D38900B14EDC /* Come little.mp3 */,
+				2D0C2A231414D38900B14EDC /* Last night.mp3 */,
+				2D0C2A241414D38900B14EDC /* Little snowflakes.mp3 */,
+				2D0C2A251414D38900B14EDC /* Mr Sun.mp3 */,
+				2D0C2A261414D38900B14EDC /* Peekaboo.mp3 */,
+				2D0C2A271414D38900B14EDC /* This baby.mp3 */,
+				2D0C2A281414D38900B14EDC /* Together.mp3 */,
+				2D0C2A291414D38900B14EDC /* Truck.mp3 */,
+				2D0C2A2A1414D38900B14EDC /* Up and down.mp3 */,
 			);
 			path = songs;
 			sourceTree = "<group>";
@@ -962,19 +965,20 @@
 				2D0FB7731407938600F105E4 /* SongsViewControllerIphone.xib in Resources */,
 				2D0FB7781407939D00F105E4 /* FavouriteCategoriesViewControllerIphone.xib in Resources */,
 				2D0FB77D140793B100F105E4 /* SettingsViewControllerIphone.xib in Resources */,
-				2D39F63C1408AC2600101A9C /* Autumn Leaves.mp3 in Resources */,
-				2D39F63D1408AC2600101A9C /* Dance all the Night.mp3 in Resources */,
-				2D39F63E1408AC2600101A9C /* Golden Slumbers.mp3 in Resources */,
-				2D39F63F1408AC2600101A9C /* Jack in the Box.mp3 in Resources */,
-				2D39F6401408AC2600101A9C /* Play all the day.mp3 in Resources */,
-				2D39F6411408AC2600101A9C /* Sleep Baby, Sleep.mp3 in Resources */,
-				2D39F6421408AC2600101A9C /* The Hello Song.mp3 in Resources */,
-				2D39F6431408AC2600101A9C /* The Magic Ring.mp3 in Resources */,
-				2D39F6451408ACFB00101A9C /* Song Video.mp4 in Resources */,
 				2DA512551408DA280031EF12 /* FavouriteCategoriesViewControllerIpad.xib in Resources */,
 				2DA512571408DA280031EF12 /* SettingsViewControllerIpad.xib in Resources */,
 				2DA512591408DA280031EF12 /* SongsViewControllerIpad.xib in Resources */,
 				2DA40647140D0B930012C8E4 /* FBDialog.bundle in Resources */,
+				2D0C2A2B1414D38900B14EDC /* Don't you cry.mp3 in Resources */,
+				2D0C2A2C1414D38900B14EDC /* Come little.mp3 in Resources */,
+				2D0C2A2D1414D38900B14EDC /* Last night.mp3 in Resources */,
+				2D0C2A2E1414D38900B14EDC /* Little snowflakes.mp3 in Resources */,
+				2D0C2A2F1414D38900B14EDC /* Mr Sun.mp3 in Resources */,
+				2D0C2A301414D38900B14EDC /* Peekaboo.mp3 in Resources */,
+				2D0C2A311414D38900B14EDC /* This baby.mp3 in Resources */,
+				2D0C2A321414D38900B14EDC /* Together.mp3 in Resources */,
+				2D0C2A331414D38900B14EDC /* Truck.mp3 in Resources */,
+				2D0C2A341414D38900B14EDC /* Up and down.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,6 +1039,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Playsongs_Prefix.pch;
 				INFOPLIST_FILE = "Playsongs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = Playsongs;
 			};
 			name = Debug;
@@ -1047,10 +1052,44 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Playsongs_Prefix.pch;
 				INFOPLIST_FILE = "Playsongs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = Playsongs;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		2DE835031410C16E001C4F36 /* adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = adhoc;
+		};
+		2DE835041410C16E001C4F36 /* adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: sabita shrestha";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Playsongs_Prefix.pch;
+				INFOPLIST_FILE = "Playsongs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = Playsongs;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CDB11AA5-DF4F-46F6-BAF4-E6AED1E3D1C3";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = adhoc;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1089,6 +1128,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				2DE835041410C16E001C4F36 /* adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1098,6 +1138,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				2DE835031410C16E001C4F36 /* adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

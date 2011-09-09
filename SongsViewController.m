@@ -15,6 +15,7 @@
 @synthesize isLullaby;
 @synthesize currentPage;
 @synthesize songs;
+@synthesize currentSong;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 
@@ -24,6 +25,8 @@
         self.isLullaby = NO;
 		self.songs = [NSArray array];
 		self.currentPage = 0;
+		context = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] managedObjectContext];
+		playlists = [[Playlist getPlaylists:context] mutableCopy];
     }
     return self;
 }
@@ -43,6 +46,8 @@
 		stick.image = [UIImage imageNamed:@"stick_lullaby.png"];
 		//[song1 setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	}
+	favFrame = favView.frame;
+	favView.frame = CGRectMake(favView.frame.origin.x, self.view.bounds.size.height, favView.frame.size.width, favView.frame.size.height);
 	[self pageChanged];
 }
 
@@ -70,24 +75,32 @@
 					[star1 setHidden:NO];
 					if ([song.favouritePlaylist count] > 0)
 						[star1 setBackgroundImage:[UIImage imageNamed:@"star_on.png"] forState:UIControlStateNormal];
+					else 
+						[star1 setBackgroundImage:[UIImage imageNamed:@"star_off.png"] forState:UIControlStateNormal];
 					break;
 				case 1:
 					[song2 setTitle:song.title forState:UIControlStateNormal];
 					[star2 setHidden:NO];
 					if ([song.favouritePlaylist count] > 0)
 						[star2 setBackgroundImage:[UIImage imageNamed:@"star_on.png"] forState:UIControlStateNormal];
+					else 
+						[star2 setBackgroundImage:[UIImage imageNamed:@"star_off.png"] forState:UIControlStateNormal];
 					break;
 				case 2:
 					[song3 setTitle:song.title forState:UIControlStateNormal];
 					[star3 setHidden:NO];
 					if ([song.favouritePlaylist count] > 0)
 						[star3 setBackgroundImage:[UIImage imageNamed:@"star_on.png"] forState:UIControlStateNormal];
+					else 
+						[star3 setBackgroundImage:[UIImage imageNamed:@"star_off.png"] forState:UIControlStateNormal];
 					break;
 				case 3:
 					[song4 setTitle:song.title forState:UIControlStateNormal];
 					[star4 setHidden:NO];
 					if ([song.favouritePlaylist count] > 0)
 						[star4 setBackgroundImage:[UIImage imageNamed:@"star_on.png"] forState:UIControlStateNormal];
+					else 
+						[star4 setBackgroundImage:[UIImage imageNamed:@"star_off.png"] forState:UIControlStateNormal];
 					break;
 				default:
 					break;
@@ -138,8 +151,6 @@
 }
 
 -(IBAction)backToMenu:(id)sender{
-	//UIWindow *window = [(AppDelegate_Shared *)[[UIApplication sharedApplication] delegate] window];
-//	[[[window subviews] lastObject] removeFromSuperview];
 	[self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -173,6 +184,119 @@
 	}
 }
 
+-(IBAction)hideFavSelection:(id)sender{
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:0.4];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+	favView.frame = CGRectMake(favView.frame.origin.x, self.view.bounds.size.height, favView.frame.size.width, favView.frame.size.height);
+	[UIView commitAnimations];
+
+}
+
+
+-(IBAction)showFavSelection:(id)sender{
+	
+	NSInteger index = 0;
+	if ((UIButton *)sender == star1) {
+		index = 0;
+	}
+	else if ((UIButton *)sender == star2) {
+		index = 1;
+	}
+	else if ((UIButton *)sender == star3) {
+		index = 2;
+	}
+	else if ((UIButton *)sender == star4) {
+		index = 3;
+	}
+	
+	self.currentSong = [self songForIndex:index];
+	[tblView reloadData];
+
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:0.4];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+	favView.frame = favFrame;
+	[UIView commitAnimations];
+}
+
+
+-(IBAction)favSelectionDone:(id)sender{
+	[self hideFavSelection:nil];
+
+}
+
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+	return @"";
+}
+
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+	return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+	return 1;
+}
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+// Customize the number of rows in the table view.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [playlists count];
+}
+
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    // Set up the cell...
+	cell.textLabel.text = [[playlists objectAtIndex:indexPath.row] title];
+	cell.detailTextLabel.font = [UIFont fontWithName:@"arial" size:14];
+	cell.detailTextLabel.numberOfLines = 1;
+	cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
+	if ([currentSong.favouritePlaylist containsObject:[playlists objectAtIndex:indexPath.row]]) {
+		[cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+	}
+	else {
+		[cell setAccessoryType:UITableViewCellAccessoryNone];
+	}
+
+	
+	return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	if ([[tableView cellForRowAtIndexPath:indexPath] accessoryType] == UITableViewCellAccessoryNone) {
+		[self.currentSong addFavouritePlaylistObject:[playlists objectAtIndex:indexPath.row]];
+		[[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark]; 
+	}
+	else if([[tableView cellForRowAtIndexPath:indexPath] accessoryType] == UITableViewCellAccessoryCheckmark){
+		[self.currentSong removeFavouritePlaylistObject:[playlists objectAtIndex:indexPath.row]];
+		[[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryNone];
+	}
+
+	NSError *error = nil;
+	if ([context save:&error]) {
+
+	}
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	[self pageChanged];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+	return 35.0;
+}
+
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -200,7 +324,10 @@
 	[stick release];
 	[next release];
 	[previous release];
+	[favView release];
 	[songs release];
+	[currentSong release];
+	[tblView release];
     [super dealloc];
 }
 

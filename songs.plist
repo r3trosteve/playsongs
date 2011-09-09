@@ -9,9 +9,9 @@
 		<key>isVideo</key>
 		<false/>
 		<key>localPath</key>
-		<string>Autumn Leaves.mp3</string>
+		<string>Don't you cry.mp3</string>
 		<key>title</key>
-		<string>Autumn Leaves</string>
+		<string>Don't you cry</string>
 		<key>url</key>
 		<string></string>
 	</dict>
@@ -22,9 +22,9 @@
 		<key>isVideo</key>
 		<false/>
 		<key>localPath</key>
-		<string>Dance all the Night.mp3</string>
+		<string>Come little.mp3</string>
 		<key>title</key>
-		<string>Dance all the Night</string>
+		<string>Come little</string>
 		<key>url</key>
 		<string></string>
 	</dict>
@@ -35,9 +35,9 @@
 		<key>isVideo</key>
 		<false/>
 		<key>localPath</key>
-		<string>Golden Slumbers.mp3</string>
+		<string>Little snowflakes.mp3</string>
 		<key>title</key>
-		<string>Golden Slumbers</string>
+		<string>Little snowflakes</string>
 		<key>url</key>
 		<string></string>
 	</dict>
@@ -46,24 +46,24 @@
 		<key>isLullaby</key>
 		<true/>
 		<key>isVideo</key>
-		<true/>
+		<false/>
 		<key>localPath</key>
-		<string>Song Video.mp4</string>
+		<string>Last night.mp3</string>
 		<key>title</key>
-		<string>Song Video</string>
+		<string>Last night</string>
 		<key>url</key>
 		<string></string>
 	</dict>
 	<key>song5</key>
 	<dict>
 		<key>isLullaby</key>
-		<false/>
+		<true/>
 		<key>isVideo</key>
 		<false/>
 		<key>localPath</key>
-		<string>Jack in the Box.mp3</string>
+		<string>Up and Down.mp3</string>
 		<key>title</key>
-		<string>Jack in the Box</string>
+		<string>Up and Down</string>
 		<key>url</key>
 		<string></string>
 	</dict>
@@ -74,9 +74,9 @@
 		<key>isVideo</key>
 		<false/>
 		<key>localPath</key>
-		<string>Play all the day.mp3</string>
+		<string>Together.mp3</string>
 		<key>title</key>
-		<string>Play all the day</string>
+		<string>Together</string>
 		<key>url</key>
 		<string></string>
 	</dict>
@@ -87,9 +87,9 @@
 		<key>isVideo</key>
 		<false/>
 		<key>localPath</key>
-		<string>Sleep Baby, Sleep.mp3</string>
+		<string>Peekaboo.mp3</string>
 		<key>title</key>
-		<string>Sleep Baby, Sleep</string>
+		<string>Peekaboo</string>
 		<key>url</key>
 		<string></string>
 	</dict>
@@ -100,9 +100,9 @@
 		<key>isVideo</key>
 		<false/>
 		<key>localPath</key>
-		<string>The Hello Song.mp3</string>
+		<string>Mr Sun.mp3</string>
 		<key>title</key>
-		<string>The Hello Song</string>
+		<string>Mr Sun</string>
 		<key>url</key>
 		<string></string>
 	</dict>
@@ -113,9 +113,22 @@
 		<key>isVideo</key>
 		<false/>
 		<key>localPath</key>
-		<string>The Magic Ring.mp3</string>
+		<string>This baby.mp3</string>
 		<key>title</key>
-		<string>The Magic Ring</string>
+		<string>This baby</string>
+		<key>url</key>
+		<string></string>
+	</dict>
+	<key>song10</key>
+	<dict>
+		<key>isLullaby</key>
+		<false/>
+		<key>isVideo</key>
+		<false/>
+		<key>localPath</key>
+		<string>Truck.mp3</string>
+		<key>title</key>
+		<string>Truck</string>
 		<key>url</key>
 		<string></string>
 	</dict>
