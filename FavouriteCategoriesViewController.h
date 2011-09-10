@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Playlist.h"
+#import "PlaylistSongs.h"
 
 @interface FavouriteCategoriesViewController : UIViewController<UIAlertViewDelegate, UITextFieldDelegate> {
 	IBOutlet UIScrollView *scrollView;

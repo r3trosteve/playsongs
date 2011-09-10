@@ -8,6 +8,8 @@
 
 #import "FavouriteCategoriesViewController.h"
 #import "UIDevice+Hardware.h"
+#import "FavouriteSongsViewControllerIpad.h"
+#import "FavouriteSongsViewControllerIphone.h"
 
 @implementation FavouriteCategoriesViewController
 
@@ -15,24 +17,6 @@
 @synthesize context;
 @synthesize categoryNameField;
 @synthesize addAlert;
-
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        //Custom initialization
-    }
-    return self;
-}
-*/
-
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
 
 
 - (void)loadScrollViewWithPage:(int)page {
@@ -59,7 +43,7 @@
 		UIButton *cloud = [UIButton buttonWithType:UIButtonTypeCustom];
 		[cloud setBackgroundImage:[UIImage imageNamed:@"cloud_big.png"] forState:UIControlStateNormal];
 		cloud.frame = view.bounds;
-		//[button addTarget:self action:@selector(delete:) forControlEvents:UIControlEventTouchUpInside];
+		[cloud addTarget:self action:@selector(showFavSongs:) forControlEvents:UIControlEventTouchUpInside];
 		
 		UILabel *label = [[[UILabel alloc] init] autorelease];
 		label.numberOfLines = 1;
@@ -104,10 +88,33 @@
 	[alert show];
 }
 
+
+-(void)showFavSongs:(id)sender{
+	NSInteger selectedIndex;
+	for (UIView *view in [scrollView subviews]) {
+		if([[view subviews] objectAtIndex:0] == (UIButton *)sender){
+			selectedIndex = [[scrollView subviews] indexOfObject:view];
+			break;
+		}
+	}
+	if ([UIDevice isIPad]) {
+		FavouriteSongsViewControllerIpad *fav = [[[FavouriteSongsViewControllerIpad alloc] initWithNibName:@"FavouriteSongsViewControllerIpad" bundle:nil] autorelease];
+		fav.playlist = [playlists objectAtIndex:selectedIndex];
+		[self.navigationController pushViewController:fav animated:YES];
+	}
+	else {
+		FavouriteSongsViewControllerIphone *fav = [[[FavouriteSongsViewControllerIphone alloc] initWithNibName:@"FavouriteSongsViewControllerIphone" bundle:nil] autorelease];
+		fav.playlist = [playlists objectAtIndex:selectedIndex];
+		[self.navigationController pushViewController:fav animated:YES];
+	}
+}
+
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
 	if (alertView.tag == 1) {
 		if (buttonIndex == 0) {
 			Playlist *playlist = [playlists objectAtIndex:deleteIndex];
+			[PlaylistSongs deleteAllEntriesForPlaylist:playlist context:context];
 			[self.context deleteObject:playlist];
 			NSError *error = nil;
 			if ([self.context save:&error]) {

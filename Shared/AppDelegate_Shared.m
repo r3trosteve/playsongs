@@ -9,7 +9,7 @@
 #import "AppDelegate_Shared.h"
 #import "Song.h"
 #import "SettingsViewController.h"
-
+#import "CustomStyleSheet.h"
 
 @implementation AppDelegate_Shared
 
@@ -41,6 +41,7 @@
 	
     
     [self.window makeKeyAndVisible];
+	[TTStyleSheet setGlobalStyleSheet:[[[CustomStyleSheet alloc] init] autorelease]];
     return YES;
 }
 

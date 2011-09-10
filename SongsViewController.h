@@ -10,6 +10,7 @@
 #import "Song.h"
 #import "CustomMoviePlayerViewController.h"
 #import "Playlist.h"
+#import "PlaylistSongs.h"
 
 @interface SongsViewController : UIViewController {
 	IBOutlet UIButton *song1;

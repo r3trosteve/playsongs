@@ -278,17 +278,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if ([[tableView cellForRowAtIndexPath:indexPath] accessoryType] == UITableViewCellAccessoryNone) {
 		[self.currentSong addFavouritePlaylistObject:[playlists objectAtIndex:indexPath.row]];
-		[[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark]; 
+		NSError *error = nil;
+		if ([context save:&error]) {
+			[PlaylistSongs createEntryForPlaylist:[playlists objectAtIndex:indexPath.row] song:self.currentSong context:context];
+			[[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark]; 
+		}
 	}
 	else if([[tableView cellForRowAtIndexPath:indexPath] accessoryType] == UITableViewCellAccessoryCheckmark){
 		[self.currentSong removeFavouritePlaylistObject:[playlists objectAtIndex:indexPath.row]];
-		[[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryNone];
+		NSError *error = nil;
+		if ([context save:&error]) {
+			[PlaylistSongs deleteEntryForPlaylist:[playlists objectAtIndex:indexPath.row] song:self.currentSong context:context];
+			[[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryNone];
+		}
 	}
 
-	NSError *error = nil;
-	if ([context save:&error]) {
-
-	}
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	[self pageChanged];
 }
