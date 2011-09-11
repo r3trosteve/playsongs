@@ -7,17 +7,24 @@
 //
 
 #import "CustomStyleSheet.h"
-
+#import "UIDevice+Hardware.h"
 
 @implementation CustomStyleSheet
 
 // Style for TTLauncherItems
 - (TTStyle*)launcherButton:(UIControlState)state {
-    return 
-    [TTPartStyle styleWithName: @"image" 
+	NSInteger fontsize;
+	if([UIDevice isIPad]){
+		fontsize = 20;
+	}
+	else {
+		fontsize = 14;
+	}
+
+    return [TTPartStyle styleWithName: @"image" 
                          style: TTSTYLESTATE(launcherButtonImage:, state) 
                           next: [TTTextStyle 
-                                 styleWithFont:[UIFont boldSystemFontOfSize:14]
+                                 styleWithFont:[UIFont boldSystemFontOfSize:fontsize]
                                  color: RGBCOLOR(0, 0, 0)
                                  minimumFontSize: 11 
                                  shadowColor: nil

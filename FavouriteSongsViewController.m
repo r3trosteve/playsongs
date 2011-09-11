@@ -8,6 +8,7 @@
 
 #import "FavouriteSongsViewController.h"
 #import "UIDevice+Hardware.h"
+#import "CustomMoviePlayerViewController.h"
 
 @implementation FavouriteSongsViewController
 
@@ -33,7 +34,7 @@
 		_launcherView.columnCount = ROWS_PER_PAGE_IPAD;
 	}
 	else {
-		_launcherView = [[TTLauncherView alloc] initWithFrame:CGRectMake(0, 0, 320, 300)];
+		_launcherView = [[TTLauncherView alloc] initWithFrame:CGRectMake(0, 0, 320, 270)];
 		_launcherView.columnCount = ROWS_PER_PAGE_IPHONE;
 	}
 
@@ -50,17 +51,26 @@
 
 
 - (void)launcherView:(TTLauncherView*)launcher didSelectItem:(TTLauncherItem*)item {
+	Song *song = (Song *)item.userInfo;
 	
+	NSString *filePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], song.localPath];
+	CustomMoviePlayerViewController *moviePlayer = [[[CustomMoviePlayerViewController alloc] initWithPath:filePath] autorelease];
+	
+	// Show the movie player as modal
+	[self presentModalViewController:moviePlayer animated:YES];
+	
+	// Prep and play the movie
+	[moviePlayer readyPlayer];
 }
 
 
 - (void)launcherViewDidBeginEditing:(TTLauncherView*)launcher {
-	
+	[doneEditing setHidden:NO];
 }
 
 
 - (void)launcherViewDidEndEditing:(TTLauncherView*)launcher {
-	
+	[doneEditing setHidden:YES];
 }
 
 - (void)launcherView:(TTLauncherView*)launcher didRemoveItem:(TTLauncherItem*)item{
@@ -109,9 +119,18 @@
 		}
 		
 		Song *song = (Song *)[context objectWithID:[coordinator managedObjectIDForURIRepresentation:[NSURL URLWithString:entry.songId]]];
+		
+		NSString *image;
+		if ([UIDevice isIPad]) {
+			image = @"bundle://star_on~ipad.png";
+		}
+		else {
+			image = @"bundle://star_on.png";
+		}
+
 		TTLauncherItem *item = [[[TTLauncherItem alloc] initWithTitle:song.title
-																image:@"bundle://star_on.png"
-																  URL:entry.songId canDelete:YES] autorelease];
+																image:image
+								 								  URL:entry.songId canDelete:YES] autorelease];
 		
 		[items addObject:item];
 		
@@ -125,6 +144,9 @@
 	return pages;
 }
 
+-(IBAction)doneEditing:(id)sender{
+	[_launcherView endEditing];
+}
 
 -(IBAction)back:(id)sender{
 	[self.navigationController popViewControllerAnimated:YES];
@@ -147,6 +169,7 @@
 - (void)dealloc {
 	[playlistSongs release];
 	[playlist release];
+	[doneEditing release];
 	[_launcherView release];
     [super dealloc];
 }

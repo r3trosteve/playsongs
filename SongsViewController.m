@@ -44,8 +44,30 @@
 	if (self.isLullaby) {
 		bg.image = [UIImage imageNamed:@"lullaby_bg.png"];
 		stick.image = [UIImage imageNamed:@"stick_lullaby.png"];
-		//[song1 setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	}
+	
+	[song1 setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[song1 setTitleShadowColor:[UIColor colorWithRed:0.26f green:0.13f blue:0.055 alpha:1] forState:UIControlStateHighlighted];
+	[song1 setTitleColor:[UIColor colorWithRed:0.26f green:0.13f blue:0.055 alpha:1] forState:UIControlStateNormal];
+	[song1.titleLabel setShadowOffset:CGSizeMake(1, 1)];
+	
+	[song2 setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[song2 setTitleShadowColor:[UIColor colorWithRed:0.26f green:0.13f blue:0.055 alpha:1] forState:UIControlStateHighlighted];
+	[song2 setTitleColor:[UIColor colorWithRed:0.26f green:0.13f blue:0.055 alpha:1] forState:UIControlStateNormal];
+	[song2.titleLabel setShadowOffset:CGSizeMake(1, 1)];
+	
+	[song3 setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[song3 setTitleShadowColor:[UIColor colorWithRed:0.26f green:0.13f blue:0.055 alpha:1] forState:UIControlStateHighlighted];
+	[song3 setTitleColor:[UIColor colorWithRed:0.26f green:0.13f blue:0.055 alpha:1] forState:UIControlStateNormal];
+	[song3.titleLabel setShadowOffset:CGSizeMake(1, 1)];
+	
+	[song4 setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[song4 setTitleShadowColor:[UIColor colorWithRed:0.26f green:0.13f blue:0.055 alpha:1] forState:UIControlStateHighlighted];
+	[song4 setTitleColor:[UIColor colorWithRed:0.26f green:0.13f blue:0.055 alpha:1] forState:UIControlStateNormal];
+	[song4.titleLabel setShadowOffset:CGSizeMake(1, 1)];
+	
+	
+	
 	favFrame = favView.frame;
 	favView.frame = CGRectMake(favView.frame.origin.x, self.view.bounds.size.height, favView.frame.size.width, favView.frame.size.height);
 	[self pageChanged];

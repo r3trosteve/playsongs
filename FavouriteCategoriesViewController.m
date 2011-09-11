@@ -45,6 +45,7 @@
 		cloud.frame = view.bounds;
 		[cloud addTarget:self action:@selector(showFavSongs:) forControlEvents:UIControlEventTouchUpInside];
 		
+		
 		UILabel *label = [[[UILabel alloc] init] autorelease];
 		label.numberOfLines = 1;
 		label.adjustsFontSizeToFitWidth = YES;
@@ -52,18 +53,22 @@
 		label.textAlignment = UITextAlignmentCenter;
 		label.backgroundColor = [UIColor clearColor];
 		
+		[label setShadowColor:[UIColor lightGrayColor]];
+		[label setTextColor:[UIColor colorWithRed:.196 green:0.3098 blue:0.52 alpha:1.0]];
+		[label setShadowOffset:CGSizeMake(1, 1)];
+		
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 		[button setBackgroundImage:[UIImage imageNamed:@"delete.png"] forState:UIControlStateNormal];
 		[button addTarget:self action:@selector(delete:) forControlEvents:UIControlEventTouchUpInside];
 		
 		
 		if ([UIDevice isIPad]) {
-			label.font = [UIFont systemFontOfSize:48];
+			label.font = [UIFont boldSystemFontOfSize:42];
 			button.frame = CGRectMake(420, 45, 83, 79);
 			label.frame = CGRectMake(60, 0, floor(view.frame.size.width) - 100, floor(view.frame.size.height));
 		}
 		else {
-			label.font = [UIFont systemFontOfSize:24];
+			label.font = [UIFont boldSystemFontOfSize:21];
 			button.frame = CGRectMake(210, 22, 41, 39);
 			label.frame = CGRectMake(30, 0, floor(view.frame.size.width - 50), floor(view.frame.size.height));
 		}

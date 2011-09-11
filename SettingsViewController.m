@@ -39,6 +39,7 @@ static NSString* kAppId = @"143449775745160";
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[nameField setText:self.childName];
+	[nameField setTextColor:[UIColor colorWithRed:0.26f green:0.13f blue:0.055 alpha:1]];
 }
 
 

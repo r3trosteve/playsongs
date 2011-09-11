@@ -26,10 +26,10 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[song1.titleLabel setFont:[UIFont systemFontOfSize:36]];
-	[song2.titleLabel setFont:[UIFont systemFontOfSize:36]];
-	[song3.titleLabel setFont:[UIFont systemFontOfSize:36]];
-	[song4.titleLabel setFont:[UIFont systemFontOfSize:36]];
+	[song1.titleLabel setFont:[UIFont boldSystemFontOfSize:32]];
+	[song2.titleLabel setFont:[UIFont boldSystemFontOfSize:32]];
+	[song3.titleLabel setFont:[UIFont boldSystemFontOfSize:32]];
+	[song4.titleLabel setFont:[UIFont boldSystemFontOfSize:32]];
 }
 
 

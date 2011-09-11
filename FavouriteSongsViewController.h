@@ -24,6 +24,7 @@
 	NSMutableArray *playlistSongs;
 	NSManagedObjectContext *context;
 	NSPersistentStoreCoordinator *coordinator;
+	IBOutlet UIButton *doneEditing;
 }
 
 
@@ -31,5 +32,6 @@
 
 -(NSArray *)getLauncherItems;
 -(IBAction)back:(id)sender;
+-(IBAction)doneEditing:(id)sender;
 
 @end
