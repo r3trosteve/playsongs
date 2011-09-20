@@ -25,13 +25,16 @@
 	NSManagedObjectContext *context;
 	NSPersistentStoreCoordinator *coordinator;
 	IBOutlet UIButton *doneEditing;
+	IBOutlet UILabel *catName;
 }
 
 
 @property (nonatomic, retain) Playlist *playlist;
+@property (nonatomic, retain) NSMutableArray *playlistSongs;
 
 -(NSArray *)getLauncherItems;
 -(IBAction)back:(id)sender;
 -(IBAction)doneEditing:(id)sender;
+-(IBAction)shuffle:(id)sender;
 
 @end

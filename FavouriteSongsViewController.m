@@ -9,10 +9,13 @@
 #import "FavouriteSongsViewController.h"
 #import "UIDevice+Hardware.h"
 #import "CustomMoviePlayerViewController.h"
+#import "AudioPlayerViewController.h"
+#import "UIDevice+Hardware.h"
 
 @implementation FavouriteSongsViewController
 
 @synthesize playlist;
+@synthesize playlistSongs;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 
@@ -28,7 +31,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	playlistSongs = [[PlaylistSongs getOrderedSongs:playlist context:context] retain];
+	self.playlistSongs = [PlaylistSongs getOrderedSongs:playlist context:context];
 	if ([UIDevice isIPad]) {
 		_launcherView = [[TTLauncherView alloc] initWithFrame:CGRectMake(0, 0, 768, 700)];
 		_launcherView.columnCount = ROWS_PER_PAGE_IPAD;
@@ -46,6 +49,7 @@
 	
 	_launcherView.pages = [self getLauncherItems];	
 	[self.view addSubview:_launcherView];
+	catName.text = playlist.title;
 }
 
 
@@ -53,14 +57,36 @@
 - (void)launcherView:(TTLauncherView*)launcher didSelectItem:(TTLauncherItem*)item {
 	Song *song = (Song *)item.userInfo;
 	
-	NSString *filePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], song.localPath];
-	CustomMoviePlayerViewController *moviePlayer = [[[CustomMoviePlayerViewController alloc] initWithPath:filePath] autorelease];
+	//NSString *filePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], song.localPath];
+	//CustomMoviePlayerViewController *moviePlayer = [[[CustomMoviePlayerViewController alloc] initWithPath:filePath] autorelease];
 	
 	// Show the movie player as modal
-	[self presentModalViewController:moviePlayer animated:YES];
-	
+	//[self presentModalViewController:moviePlayer animated:YES];
+	//[moviePlayer readyPlayer];
 	// Prep and play the movie
-	[moviePlayer readyPlayer];
+	
+	AudioPlayerViewController *audioPlayer;
+	if ([UIDevice isIPad]) {
+	audioPlayer = [[[AudioPlayerViewController alloc] initWithNibName:@"AudioPlayerViewControllerIpad" bundle:nil] autorelease];
+	}
+	else{
+	 audioPlayer = [[[AudioPlayerViewController alloc] initWithNibName:@"AudioPlayerViewControllerIphone" bundle:nil] autorelease];
+	}
+	
+	NSMutableArray *songs = [NSMutableArray array];
+	for(PlaylistSongs *entry in playlistSongs){
+		Song *aSong = (Song *)[context objectWithID:[coordinator managedObjectIDForURIRepresentation:[NSURL URLWithString:entry.songId]]];
+		[songs addObject:aSong];
+		if ([aSong.title isEqualToString:song.title]) {
+			audioPlayer.index = [songs indexOfObject:aSong];
+		}
+	}
+	
+	audioPlayer.songs = songs;
+	audioPlayer.shuffle = NO;
+	
+	[self.navigationController pushViewController:audioPlayer animated:YES];
+	
 }
 
 
@@ -92,6 +118,7 @@
 				[PlaylistSongs reorderEntryForPlaylist:playlist song:(Song *)anItem.userInfo order:(indexPath.section * ITEMS_PER_PAGE_IPHONE + indexPath.row + 1) context:context];
 
 			}
+			self.playlistSongs = [PlaylistSongs getOrderedSongs:playlist context:context];
 			PlaylistSongs *entry = [PlaylistSongs getEntryForPlaylist:playlist song:(Song *)anItem.userInfo context:context];
 			NSLog(@"%d", [entry.songOrder intValue]);
 			NSLog(@"%@", ((Song *)anItem.userInfo).title);
@@ -144,6 +171,32 @@
 	return pages;
 }
 
+
+-(IBAction)shuffle:(id)sender{
+	if ([playlistSongs count] > 0) {
+		AudioPlayerViewController *audioPlayer;
+		if ([UIDevice isIPad]) {
+			audioPlayer = [[[AudioPlayerViewController alloc] initWithNibName:@"AudioPlayerViewControllerIpad" bundle:nil] autorelease];
+		}
+		else{
+		 audioPlayer = [[[AudioPlayerViewController alloc] initWithNibName:@"AudioPlayerViewControllerIphone" bundle:nil] autorelease];
+		}
+		
+		NSMutableArray *songs = [NSMutableArray array];
+		for(PlaylistSongs *entry in playlistSongs){
+			Song *aSong = (Song *)[context objectWithID:[coordinator managedObjectIDForURIRepresentation:[NSURL URLWithString:entry.songId]]];
+			[songs addObject:aSong];
+		}
+		
+		audioPlayer.songs = songs;
+		audioPlayer.index = abs(arc4random() % [songs count]);
+		audioPlayer.shuffle = YES;
+		
+		[self.navigationController pushViewController:audioPlayer animated:YES];
+	}
+}
+
+
 -(IBAction)doneEditing:(id)sender{
 	[_launcherView endEditing];
 }
@@ -171,6 +224,7 @@
 	[playlist release];
 	[doneEditing release];
 	[_launcherView release];
+	[catName release];
     [super dealloc];
 }
 

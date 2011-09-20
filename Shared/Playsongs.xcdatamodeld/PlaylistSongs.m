@@ -164,34 +164,6 @@
 		}
 	}
 	
-	//if (theEntry == nil || [theEntry.songOrder intValue] == order) {
-//		return;
-//	}
-//	
-//	NSInteger origOrder = [theEntry.songOrder intValue];
-//	
-//	fetchRequest = [[[NSFetchRequest alloc] init] autorelease];
-//	entity = [NSEntityDescription entityForName:@"PlaylistSongs" inManagedObjectContext:context];
-//	predicate = [NSPredicate predicateWithFormat:@"playlistId = %@", playlistId];
-//	[fetchRequest setEntity:entity];
-//	[fetchRequest setPredicate:predicate];
-//	
-//	results = [context executeFetchRequest:fetchRequest error:&error];
-//	
-//	for(PlaylistSongs *entry in results){
-//		if (entry == theEntry) {
-//			entry.songOrder = [NSNumber numberWithInt:order];
-//		}
-//		else if ([entry.songOrder intValue] >= order && [entry.songOrder intValue] < origOrder){
-//			entry.songOrder = [NSNumber numberWithInt:([entry.songOrder intValue] + 1)];
-//		}
-//		
-//		NSError *error = nil;
-//		if ([context save:&error]) {
-//			
-//		}
-//	}
-
 }
 
 

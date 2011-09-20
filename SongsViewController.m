@@ -8,7 +8,8 @@
 
 #import "SongsViewController.h"
 #import "AppDelegate_Shared.h"
-
+#import "AudioPlayerViewController.h"
+#import "UIDevice+Hardware.h"
 
 @implementation SongsViewController
 
@@ -193,16 +194,29 @@
 	}
 	index = currentPage * 4 + index;
 	if(index < [songs count]){
-		Song *song = [songs objectAtIndex:index];
+		//Song *song = [songs objectAtIndex:index];
 		
-		NSString *filePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], song.localPath];
-		moviePlayer = [[[CustomMoviePlayerViewController alloc] initWithPath:filePath] autorelease];
+		//NSString *filePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], song.localPath];
+		//moviePlayer = [[[CustomMoviePlayerViewController alloc] initWithPath:filePath] autorelease];
 		
 		// Show the movie player as modal
-		[self presentModalViewController:moviePlayer animated:YES];
+		//[self presentModalViewController:moviePlayer animated:YES];
 		
 		// Prep and play the movie
-		[moviePlayer readyPlayer];
+		//[moviePlayer readyPlayer];
+		
+		AudioPlayerViewController *audioPlayer;
+		if ([UIDevice isIPad]) {
+			audioPlayer = [[[AudioPlayerViewController alloc] initWithNibName:@"AudioPlayerViewControllerIpad" bundle:nil] autorelease];
+		}
+		else{
+			audioPlayer = [[[AudioPlayerViewController alloc] initWithNibName:@"AudioPlayerViewControllerIphone" bundle:nil] autorelease];
+		}
+		
+		audioPlayer.songs = songs;
+		audioPlayer.index = index;
+		
+		[self.navigationController pushViewController:audioPlayer animated:YES];
 	}
 }
 

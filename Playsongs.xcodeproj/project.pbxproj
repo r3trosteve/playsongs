@@ -34,7 +34,7 @@
 		2D0C2A311414D38900B14EDC /* This baby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A271414D38900B14EDC /* This baby.mp3 */; };
 		2D0C2A321414D38900B14EDC /* Together.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A281414D38900B14EDC /* Together.mp3 */; };
 		2D0C2A331414D38900B14EDC /* Truck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A291414D38900B14EDC /* Truck.mp3 */; };
-		2D0C2A341414D38900B14EDC /* Up and down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A2A1414D38900B14EDC /* Up and down.mp3 */; };
+		2D0C2A341414D38900B14EDC /* Up and Down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D0C2A2A1414D38900B14EDC /* Up and Down.mp3 */; };
 		2D0FB42C14075D7100F105E4 /* add_favourite.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB3AE14075D7100F105E4 /* add_favourite.png */; };
 		2D0FB42D14075D7100F105E4 /* add_favourite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB3AF14075D7100F105E4 /* add_favourite@2x.png */; };
 		2D0FB42E14075D7100F105E4 /* add_favourite~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FB3B014075D7100F105E4 /* add_favourite~ipad.png */; };
@@ -181,8 +181,18 @@
 		2D36A4E9141A036200065481 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2D36A4E8141A036200065481 /* Three20.bundle */; };
 		2D52FEDC1404CDEF00D6B042 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52FED91404CDEF00D6B042 /* Song.m */; };
 		2D52FEDD1404CDEF00D6B042 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52FEDB1404CDEF00D6B042 /* Playlist.m */; };
+		2D84F16614277D34008AA94C /* audioplayer_bg~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D84F15F14277D34008AA94C /* audioplayer_bg~ipad.png */; };
+		2D84F16714277D34008AA94C /* next~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D84F16014277D34008AA94C /* next~ipad.png */; };
+		2D84F16814277D34008AA94C /* pause~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D84F16114277D34008AA94C /* pause~ipad.png */; };
+		2D84F16914277D34008AA94C /* play~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D84F16214277D34008AA94C /* play~ipad.png */; };
+		2D84F16A14277D34008AA94C /* previous~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D84F16314277D34008AA94C /* previous~ipad.png */; };
+		2D84F16B14277D34008AA94C /* progress_bar~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D84F16414277D34008AA94C /* progress_bar~ipad.png */; };
+		2D84F16C14277D34008AA94C /* stop~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D84F16514277D34008AA94C /* stop~ipad.png */; };
 		2D86F953141A0AFC00EB9A59 /* FavouriteSongsViewControllerIpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86F951141A0AFC00EB9A59 /* FavouriteSongsViewControllerIpad.m */; };
 		2D86F954141A0AFC00EB9A59 /* FavouriteSongsViewControllerIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D86F952141A0AFC00EB9A59 /* FavouriteSongsViewControllerIpad.xib */; };
+		2D9910F814288F02006F90D6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9910F514288F02006F90D6 /* Icon@2x.png */; };
+		2D9910F914288F02006F90D6 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9910F614288F02006F90D6 /* Icon-72.png */; };
+		2D9910FA14288F02006F90D6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9910F714288F02006F90D6 /* Icon.png */; };
 		2DA402F8140CCD540012C8E4 /* HomeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA402F7140CCD540012C8E4 /* HomeAnimationController.m */; };
 		2DA40646140D0B930012C8E4 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4062F140D0B930012C8E4 /* Facebook.m */; };
 		2DA40647140D0B930012C8E4 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DA40631140D0B930012C8E4 /* FBDialog.bundle */; };
@@ -203,6 +213,24 @@
 		2DA512591408DA280031EF12 /* SongsViewControllerIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA512531408DA280031EF12 /* SongsViewControllerIpad.xib */; };
 		2DD591EC140C9975006D9B7A /* CustomMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD591EB140C9975006D9B7A /* CustomMoviePlayerViewController.m */; };
 		2DE4DA9914093EA7004C27DD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE4DA9814093EA7004C27DD /* MediaPlayer.framework */; };
+		2DE541511423591800AA78BA /* audioplayer_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE541431423591800AA78BA /* audioplayer_bg.png */; };
+		2DE541521423591800AA78BA /* audioplayer_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE541441423591800AA78BA /* audioplayer_bg@2x.png */; };
+		2DE541531423591800AA78BA /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE541451423591800AA78BA /* next.png */; };
+		2DE541541423591800AA78BA /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE541461423591800AA78BA /* next@2x.png */; };
+		2DE541551423591800AA78BA /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE541471423591800AA78BA /* pause.png */; };
+		2DE541561423591800AA78BA /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE541481423591800AA78BA /* pause@2x.png */; };
+		2DE541571423591800AA78BA /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE541491423591800AA78BA /* play.png */; };
+		2DE541581423591800AA78BA /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE5414A1423591800AA78BA /* play@2x.png */; };
+		2DE541591423591800AA78BA /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE5414B1423591800AA78BA /* previous.png */; };
+		2DE5415A1423591800AA78BA /* previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE5414C1423591800AA78BA /* previous@2x.png */; };
+		2DE5415B1423591800AA78BA /* progress_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE5414D1423591800AA78BA /* progress_bar.png */; };
+		2DE5415C1423591800AA78BA /* progress_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE5414E1423591800AA78BA /* progress_bar@2x.png */; };
+		2DE5415D1423591800AA78BA /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE5414F1423591800AA78BA /* stop.png */; };
+		2DE5415E1423591800AA78BA /* stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE541501423591800AA78BA /* stop@2x.png */; };
+		2DE541611423596A00AA78BA /* AudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE541601423596A00AA78BA /* AudioPlayerViewController.m */; };
+		2DE541631423598700AA78BA /* AudioPlayerViewControllerIpad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE541621423598700AA78BA /* AudioPlayerViewControllerIpad.xib */; };
+		2DE54165142359A100AA78BA /* AudioPlayerViewControllerIphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE54164142359A100AA78BA /* AudioPlayerViewControllerIphone.xib */; };
+		2DE541C9142363FF00AA78BA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE541C8142363FF00AA78BA /* AVFoundation.framework */; };
 		2DEB7EF4141B37C200D027F8 /* PlaylistSongs.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB7EF3141B37C200D027F8 /* PlaylistSongs.m */; };
 		2DEB7FFB141B558D00D027F8 /* CustomStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEB7FFA141B558D00D027F8 /* CustomStyleSheet.m */; };
 		2DF0AC2214067A8800A14FA0 /* songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0AC2114067A8800A14FA0 /* songs.plist */; };
@@ -404,7 +432,7 @@
 		2D0C2A271414D38900B14EDC /* This baby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "This baby.mp3"; sourceTree = "<group>"; };
 		2D0C2A281414D38900B14EDC /* Together.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Together.mp3; sourceTree = "<group>"; };
 		2D0C2A291414D38900B14EDC /* Truck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Truck.mp3; sourceTree = "<group>"; };
-		2D0C2A2A1414D38900B14EDC /* Up and down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Up and down.mp3"; sourceTree = "<group>"; };
+		2D0C2A2A1414D38900B14EDC /* Up and Down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Up and Down.mp3"; sourceTree = "<group>"; };
 		2D0FB3AE14075D7100F105E4 /* add_favourite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_favourite.png; sourceTree = "<group>"; };
 		2D0FB3AF14075D7100F105E4 /* add_favourite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_favourite@2x.png"; sourceTree = "<group>"; };
 		2D0FB3B014075D7100F105E4 /* add_favourite~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_favourite~ipad.png"; sourceTree = "<group>"; };
@@ -567,9 +595,19 @@
 		2D52FED91404CDEF00D6B042 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 		2D52FEDA1404CDEF00D6B042 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
 		2D52FEDB1404CDEF00D6B042 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
+		2D84F15F14277D34008AA94C /* audioplayer_bg~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audioplayer_bg~ipad.png"; sourceTree = "<group>"; };
+		2D84F16014277D34008AA94C /* next~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next~ipad.png"; sourceTree = "<group>"; };
+		2D84F16114277D34008AA94C /* pause~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause~ipad.png"; sourceTree = "<group>"; };
+		2D84F16214277D34008AA94C /* play~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play~ipad.png"; sourceTree = "<group>"; };
+		2D84F16314277D34008AA94C /* previous~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "previous~ipad.png"; sourceTree = "<group>"; };
+		2D84F16414277D34008AA94C /* progress_bar~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress_bar~ipad.png"; sourceTree = "<group>"; };
+		2D84F16514277D34008AA94C /* stop~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop~ipad.png"; sourceTree = "<group>"; };
 		2D86F950141A0AFC00EB9A59 /* FavouriteSongsViewControllerIpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavouriteSongsViewControllerIpad.h; path = iPad/FavouriteSongsViewControllerIpad.h; sourceTree = "<group>"; };
 		2D86F951141A0AFC00EB9A59 /* FavouriteSongsViewControllerIpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavouriteSongsViewControllerIpad.m; path = iPad/FavouriteSongsViewControllerIpad.m; sourceTree = "<group>"; };
 		2D86F952141A0AFC00EB9A59 /* FavouriteSongsViewControllerIpad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavouriteSongsViewControllerIpad.xib; path = iPad/FavouriteSongsViewControllerIpad.xib; sourceTree = "<group>"; };
+		2D9910F514288F02006F90D6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		2D9910F614288F02006F90D6 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		2D9910F714288F02006F90D6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		2DA402F6140CCD540012C8E4 /* HomeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeAnimationController.h; sourceTree = "<group>"; };
 		2DA402F7140CCD540012C8E4 /* HomeAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeAnimationController.m; sourceTree = "<group>"; };
 		2DA4062E140D0B930012C8E4 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
@@ -607,6 +645,25 @@
 		2DD591EA140C9975006D9B7A /* CustomMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMoviePlayerViewController.h; sourceTree = "<group>"; };
 		2DD591EB140C9975006D9B7A /* CustomMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMoviePlayerViewController.m; sourceTree = "<group>"; };
 		2DE4DA9814093EA7004C27DD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2DE541431423591800AA78BA /* audioplayer_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audioplayer_bg.png; sourceTree = "<group>"; };
+		2DE541441423591800AA78BA /* audioplayer_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audioplayer_bg@2x.png"; sourceTree = "<group>"; };
+		2DE541451423591800AA78BA /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		2DE541461423591800AA78BA /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
+		2DE541471423591800AA78BA /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		2DE541481423591800AA78BA /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
+		2DE541491423591800AA78BA /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		2DE5414A1423591800AA78BA /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
+		2DE5414B1423591800AA78BA /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previous.png; sourceTree = "<group>"; };
+		2DE5414C1423591800AA78BA /* previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "previous@2x.png"; sourceTree = "<group>"; };
+		2DE5414D1423591800AA78BA /* progress_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_bar.png; sourceTree = "<group>"; };
+		2DE5414E1423591800AA78BA /* progress_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress_bar@2x.png"; sourceTree = "<group>"; };
+		2DE5414F1423591800AA78BA /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		2DE541501423591800AA78BA /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
+		2DE5415F1423596A00AA78BA /* AudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerViewController.h; sourceTree = "<group>"; };
+		2DE541601423596A00AA78BA /* AudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerViewController.m; sourceTree = "<group>"; };
+		2DE541621423598700AA78BA /* AudioPlayerViewControllerIpad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayerViewControllerIpad.xib; sourceTree = "<group>"; };
+		2DE54164142359A100AA78BA /* AudioPlayerViewControllerIphone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayerViewControllerIphone.xib; sourceTree = "<group>"; };
+		2DE541C8142363FF00AA78BA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2DEB7EF2141B37C200D027F8 /* PlaylistSongs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistSongs.h; sourceTree = "<group>"; };
 		2DEB7EF3141B37C200D027F8 /* PlaylistSongs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistSongs.m; sourceTree = "<group>"; };
 		2DEB7FF9141B558D00D027F8 /* CustomStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStyleSheet.h; sourceTree = "<group>"; };
@@ -634,6 +691,7 @@
 				2D0478E8141A16670076844C /* libThree20Style.a in Frameworks */,
 				2D0478E9141A166B0076844C /* libThree20Network-Xcode3.2.5.a in Frameworks */,
 				2D04790F141A18130076844C /* libThree20Core.a in Frameworks */,
+				2DE541C9142363FF00AA78BA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +727,7 @@
 				2D36A3E41419F66000065481 /* FavouriteSongsViewControllerIphone.h */,
 				2D36A3E51419F66000065481 /* FavouriteSongsViewControllerIphone.m */,
 				2D36A3E61419F66000065481 /* FavouriteSongsViewControllerIphone.xib */,
+				2DE54164142359A100AA78BA /* AudioPlayerViewControllerIphone.xib */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -698,6 +757,8 @@
 				2DA402F7140CCD540012C8E4 /* HomeAnimationController.m */,
 				2D36A3DC1419F63600065481 /* FavouriteSongsViewController.h */,
 				2D36A3DD1419F63600065481 /* FavouriteSongsViewController.m */,
+				2DE5415F1423596A00AA78BA /* AudioPlayerViewController.h */,
+				2DE541601423596A00AA78BA /* AudioPlayerViewController.m */,
 				2DEB7FF9141B558D00D027F8 /* CustomStyleSheet.h */,
 				2DEB7FFA141B558D00D027F8 /* CustomStyleSheet.m */,
 			);
@@ -756,6 +817,7 @@
 				1D3623240D0F684500981E51 /* AppDelegate_iPad.h */,
 				1D3623250D0F684500981E51 /* AppDelegate_iPad.m */,
 				28AD733E0D9D9553002E5188 /* MainWindow_iPad.xib */,
+				2DE541621423598700AA78BA /* AudioPlayerViewControllerIpad.xib */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -763,6 +825,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DE541C8142363FF00AA78BA /* AVFoundation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -1018,7 +1081,7 @@
 				2D0C2A271414D38900B14EDC /* This baby.mp3 */,
 				2D0C2A281414D38900B14EDC /* Together.mp3 */,
 				2D0C2A291414D38900B14EDC /* Truck.mp3 */,
-				2D0C2A2A1414D38900B14EDC /* Up and down.mp3 */,
+				2D0C2A2A1414D38900B14EDC /* Up and Down.mp3 */,
 			);
 			path = songs;
 			sourceTree = "<group>";
@@ -1064,6 +1127,10 @@
 		2DB5D4B614062B9C00C2B807 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D9910F514288F02006F90D6 /* Icon@2x.png */,
+				2D9910F614288F02006F90D6 /* Icon-72.png */,
+				2D9910F714288F02006F90D6 /* Icon.png */,
+				2DE541421423591800AA78BA /* audio player */,
 				2D39F6331408AC2600101A9C /* songs */,
 				2D0FB3AD14075D7100F105E4 /* favourites */,
 				2D0FB3C514075D7100F105E4 /* home */,
@@ -1073,6 +1140,34 @@
 				2DF0AC2114067A8800A14FA0 /* songs.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		2DE541421423591800AA78BA /* audio player */ = {
+			isa = PBXGroup;
+			children = (
+				2D84F15F14277D34008AA94C /* audioplayer_bg~ipad.png */,
+				2D84F16014277D34008AA94C /* next~ipad.png */,
+				2D84F16114277D34008AA94C /* pause~ipad.png */,
+				2D84F16214277D34008AA94C /* play~ipad.png */,
+				2D84F16314277D34008AA94C /* previous~ipad.png */,
+				2D84F16414277D34008AA94C /* progress_bar~ipad.png */,
+				2D84F16514277D34008AA94C /* stop~ipad.png */,
+				2DE541431423591800AA78BA /* audioplayer_bg.png */,
+				2DE541441423591800AA78BA /* audioplayer_bg@2x.png */,
+				2DE541451423591800AA78BA /* next.png */,
+				2DE541461423591800AA78BA /* next@2x.png */,
+				2DE541471423591800AA78BA /* pause.png */,
+				2DE541481423591800AA78BA /* pause@2x.png */,
+				2DE541491423591800AA78BA /* play.png */,
+				2DE5414A1423591800AA78BA /* play@2x.png */,
+				2DE5414B1423591800AA78BA /* previous.png */,
+				2DE5414C1423591800AA78BA /* previous@2x.png */,
+				2DE5414D1423591800AA78BA /* progress_bar.png */,
+				2DE5414E1423591800AA78BA /* progress_bar@2x.png */,
+				2DE5414F1423591800AA78BA /* stop.png */,
+				2DE541501423591800AA78BA /* stop@2x.png */,
+			);
+			path = "audio player";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1419,10 +1514,36 @@
 				2D0C2A311414D38900B14EDC /* This baby.mp3 in Resources */,
 				2D0C2A321414D38900B14EDC /* Together.mp3 in Resources */,
 				2D0C2A331414D38900B14EDC /* Truck.mp3 in Resources */,
-				2D0C2A341414D38900B14EDC /* Up and down.mp3 in Resources */,
+				2D0C2A341414D38900B14EDC /* Up and Down.mp3 in Resources */,
 				2D36A3E81419F66000065481 /* FavouriteSongsViewControllerIphone.xib in Resources */,
 				2D36A4E9141A036200065481 /* Three20.bundle in Resources */,
 				2D86F954141A0AFC00EB9A59 /* FavouriteSongsViewControllerIpad.xib in Resources */,
+				2DE541511423591800AA78BA /* audioplayer_bg.png in Resources */,
+				2DE541521423591800AA78BA /* audioplayer_bg@2x.png in Resources */,
+				2DE541531423591800AA78BA /* next.png in Resources */,
+				2DE541541423591800AA78BA /* next@2x.png in Resources */,
+				2DE541551423591800AA78BA /* pause.png in Resources */,
+				2DE541561423591800AA78BA /* pause@2x.png in Resources */,
+				2DE541571423591800AA78BA /* play.png in Resources */,
+				2DE541581423591800AA78BA /* play@2x.png in Resources */,
+				2DE541591423591800AA78BA /* previous.png in Resources */,
+				2DE5415A1423591800AA78BA /* previous@2x.png in Resources */,
+				2DE5415B1423591800AA78BA /* progress_bar.png in Resources */,
+				2DE5415C1423591800AA78BA /* progress_bar@2x.png in Resources */,
+				2DE5415D1423591800AA78BA /* stop.png in Resources */,
+				2DE5415E1423591800AA78BA /* stop@2x.png in Resources */,
+				2DE541631423598700AA78BA /* AudioPlayerViewControllerIpad.xib in Resources */,
+				2DE54165142359A100AA78BA /* AudioPlayerViewControllerIphone.xib in Resources */,
+				2D84F16614277D34008AA94C /* audioplayer_bg~ipad.png in Resources */,
+				2D84F16714277D34008AA94C /* next~ipad.png in Resources */,
+				2D84F16814277D34008AA94C /* pause~ipad.png in Resources */,
+				2D84F16914277D34008AA94C /* play~ipad.png in Resources */,
+				2D84F16A14277D34008AA94C /* previous~ipad.png in Resources */,
+				2D84F16B14277D34008AA94C /* progress_bar~ipad.png in Resources */,
+				2D84F16C14277D34008AA94C /* stop~ipad.png in Resources */,
+				2D9910F814288F02006F90D6 /* Icon@2x.png in Resources */,
+				2D9910F914288F02006F90D6 /* Icon-72.png in Resources */,
+				2D9910FA14288F02006F90D6 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1472,6 +1593,7 @@
 				2D86F953141A0AFC00EB9A59 /* FavouriteSongsViewControllerIpad.m in Sources */,
 				2DEB7EF4141B37C200D027F8 /* PlaylistSongs.m in Sources */,
 				2DEB7FFB141B558D00D027F8 /* CustomStyleSheet.m in Sources */,
+				2DE541611423596A00AA78BA /* AudioPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
