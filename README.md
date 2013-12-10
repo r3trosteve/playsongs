@@ -15,7 +15,24 @@ This code is a couple of years old now, so could do with some updating to suppor
 
 Biggup my man in Nepal, Bala Badra Maharjan, for his work on this app.
 
-Feel free to make a pul
+## Installation
+
+- Clone the repo
+- Open project in Xcode
+
+## Requirements
+
+- Xcode
+- iOS Device, such is the age of the code, iPhone 4 or later
+- a Mac
+
+# To Do
+
+- Update for more recent iOS versions
+- Update for changes in display sizes
+- Update for deprecated code
+- Update outdated SDK's and libraries
+- Put some more thought into the README to help those who would like to help
 
 
 
